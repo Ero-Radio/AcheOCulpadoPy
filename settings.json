@@ -1,0 +1,35 @@
+{
+  "keymap":"wasd",
+  "keymap_options":{
+    "keys":{
+      "up":"up_arrow",
+      "right":"right_arrow",
+      "down":"down_arrow",
+      "left": "left_arrow",
+      "interaction":"z",
+      "blame":"x",
+      "notebook":"c",
+      "inventory":"v"
+    },
+    "wasd":{
+      "up":"up_arrow",
+      "right":"right_arrow",
+      "down":"down_arrow",
+      "left": "left_arrow",
+      "interaction":"e",
+      "blame":"b",
+      "notebook":"n",
+      "inventory":"i"
+    },
+    "user":{
+      "up":"",
+      "right":"",
+      "down":"",
+      "left": "",
+      "interaction":"e",
+      "blame":"b",
+      "notebook":"n",
+      "inventory":"i"
+    }
+  }
+}
