@@ -3,6 +3,13 @@ import Settings
 import Scene
 import Player
 import CollectableObject
+import InteractiveObject
+import Notebook
+import Inventory
+
+### funcoes de Interacao
+def sairFatequia():
+    arcade.draw_rectangle_filled(400, 300 ,800, 600, (200, 200, 200))
 
 class Game(arcade.Window):
 
@@ -11,7 +18,8 @@ class Game(arcade.Window):
         self.setWin = Settings.SettingsWindow()
         self.scene = Scene.Scene()
         self.player = Player.Player()
-        self.inventory = []
+        self.notebook = Notebook.Notebook()
+        self.inventory = Inventory.Inventory()
         self.collectables = CollectableObject.CollectableList()
         self.collectables.append(CollectableObject.CollectableObject())
         self.collectables.append(CollectableObject.CollectableObject())
@@ -31,6 +39,8 @@ class Game(arcade.Window):
                 "left":False,
                 "interaction":False
                 }
+        self.t1 = InteractiveObject.InteractiveObject()
+        self.t2 = InteractiveObject.InteractiveObject()
 
     def on_draw(self):
         arcade.start_render()
@@ -39,12 +49,16 @@ class Game(arcade.Window):
         self.player.draw()
         self.walls.draw(self.player)
         self.collectables.draw(self.player)
-        for i in range(len(self.inventory)):
-            arcade.draw_text(self.inventory[i].name, 10, 100*i+1, arcade.color.GREEN, 20)
+        self.notebook.draw()
+        self.inventory.draw()
+
+        self.t2.interact(sairFatequia)
 
     def update(self, dt):
+        self.t1.interact()
         self.setWin.update(self.keys)
-        self.player.update(self.keys)
+        if not (self.notebook.active or self.inventory.active):
+            self.player.update(self.keys)
         for c in self.collectables:
             if(c.isInteracting(self.player) and self.keys["interaction"]):
                 self.inventory.append(c)
@@ -63,6 +77,15 @@ class Game(arcade.Window):
             self.keys["left"] = True
         if key == arcade.key.E:
             self.keys["interaction"] = True
+        if key == arcade.key.N:
+            self.notebook.active = True
+        if key == arcade.key.I:
+            self.inventory.active = True
+        if key == arcade.key.ESCAPE:
+            if(self.notebook.active):
+                self.notebook.active = False
+            if(self.inventory.active):
+                self.inventory.active = False
 
     def on_key_release(self, key, mod):
         if key == arcade.key.UP or key == arcade.key.W:
