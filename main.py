@@ -1,7 +1,7 @@
-from GameWindow import *
+from Game import *
 import arcade
 def main():
-    w = GameWindow()
+    w = Game()
     arcade.run()
 
 if __name__ == "__main__":
