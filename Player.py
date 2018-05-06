@@ -1,4 +1,6 @@
 import arcade
+
+PLAYER_SPEED = 10
 class Player(arcade.Sprite):
     def __init__(self):
         super().__init__("wolala.png", 1)
@@ -7,10 +9,15 @@ class Player(arcade.Sprite):
 
     def update(self,keys):
         if(keys["up"]):
-            self.center_y +=1
+            self.change_y = PLAYER_SPEED
         if(keys["down"]):
-            self.center_y -=1
+            self.change_y = -PLAYER_SPEED
         if(keys["left"]):
-            self.center_x -=1
+            self.change_x = -PLAYER_SPEED
         if(keys["right"]):
-            self.center_x +=1
+            self.change_x = PLAYER_SPEED
+
+        if(not keys["up"] and not keys["down"]):
+            self.change_y = 0
+        if(not keys["left"] and not keys["right"]):
+            self.change_x = 0
