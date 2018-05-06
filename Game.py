@@ -1,4 +1,5 @@
 import arcade
+import Menu
 import Settings
 import Scene
 import Player
@@ -7,31 +8,21 @@ import InteractiveObject
 import Notebook
 import Inventory
 
-### funcoes de Interacao
-def sairFatequia():
-    arcade.draw_rectangle_filled(400, 300 ,800, 600, (200, 200, 200))
-
 class Game(arcade.Window):
 
     def __init__(self):
         super().__init__(800, 600, "Ache o Culpado")
-        self.setWin = Settings.SettingsWindow()
-        self.scene = Scene.Scene()
-        self.player = Player.Player()
-        self.notebook = Notebook.Notebook()
-        self.inventory = Inventory.Inventory()
-        self.collectables = CollectableObject.CollectableList()
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.collectables.append(CollectableObject.CollectableObject())
-        self.walls = arcade.SpriteList()
-        self.walls.append(arcade.Sprite("wolala.png", 1, center_x=100, center_y=200))
-        self.walls.append(arcade.Sprite("wolala.png", 1, center_x=400, center_y=200))
-        self.walls.append(arcade.Sprite("wolala.png", 1, center_x=300, center_y=200))
-        self.physicsEngine = arcade.PhysicsEngineSimple(self.player, self.walls)
+        self.menuWin = None
+        self.scenes = None
+        self.player = None
+        self.collectableList = None
+        self.colisionsList = None
+        self.physicsEngine = None
+        self.keys = None
+
+    def setup(self):
+        print("Setup")
+        self.menuWin = Menu.Window()
         self.keys = {
                 "up":False,
                 "right":False,
@@ -39,12 +30,12 @@ class Game(arcade.Window):
                 "left":False,
                 "interaction":False
                 }
-        self.t1 = InteractiveObject.InteractiveObject()
-        self.t2 = InteractiveObject.InteractiveObject()
+        self.keymap = Settings.load_settings()
 
     def on_draw(self):
         arcade.start_render()
-        #self.setWin.draw()
+        self.menuWin.draw()
+        '''
         self.scene.draw()
         self.player.draw()
         self.walls.draw(self.player)
@@ -53,8 +44,10 @@ class Game(arcade.Window):
         self.inventory.draw()
 
         self.t2.interact(sairFatequia)
+        '''
 
     def update(self, dt):
+        '''
         self.t1.interact()
         self.setWin.update(self.keys)
         if not (self.notebook.active or self.inventory.active):
@@ -65,8 +58,12 @@ class Game(arcade.Window):
                 self.collectables.remove(c)
 
         self.physicsEngine.update()
-
+        '''
     def on_key_press(self, key, mod):
+        print(key)
+        if key == self.keymap["interaction"]:
+            print("Interraco puto")
+        '''
         if key == arcade.key.UP or key == arcade.key.W:
             self.keys["up"] = True
         if key == arcade.key.RIGHT or key == arcade.key.D:
@@ -78,15 +75,15 @@ class Game(arcade.Window):
         if key == arcade.key.E:
             self.keys["interaction"] = True
         if key == arcade.key.N:
-            self.notebook.active = True
+            self.menuWin.active = False
         if key == arcade.key.I:
-            self.inventory.active = True
+            self.menuWin.active = True
         if key == arcade.key.ESCAPE:
             if(self.notebook.active):
                 self.notebook.active = False
             if(self.inventory.active):
                 self.inventory.active = False
-
+        '''
     def on_key_release(self, key, mod):
         if key == arcade.key.UP or key == arcade.key.W:
             self.keys["up"] = False

@@ -1,16 +1,9 @@
-import json
 import arcade
-def load_settings():
-    settings = open("json/settings.json", "r", encoding="utf8")
-    settings = json.loads(settings.read())
-    sKeyMap = settings["keymap"]
-    return settings["keymap_options"][sKeyMap]
 
+def Window():
+    return MenuWindow()
 
-def save_settings():
-    ...
-
-class SettingsWindow:
+class MenuWindow:
     def __init__(self):
         self.menu = [
                 ("Iniciar", 100, 200),
@@ -20,8 +13,12 @@ class SettingsWindow:
                     ]
         self.item = 0
         self.hasChanged = False
+        self.active = True
 
     def draw(self):
+        if not self.active:
+            return
+
         for item in self.menu:
             arcade.draw_text(item[0], item[1], item[2], arcade.color.WHITE, 50)
 

@@ -1,25 +1,25 @@
 {
   "keymap":"wasd",
   "keymap_options":{
-    "keys":{
-      "up":"up_arrow",
-      "right":"right_arrow",
-      "down":"down_arrow",
-      "left": "left_arrow",
-      "interaction":"z",
-      "blame":"x",
-      "notebook":"c",
-      "inventory":"v"
+    "arrow":{
+      "up":65362,
+      "right":65363,
+      "down":65364,
+      "left": 65361,
+      "interaction":122,
+      "blame":120,
+      "notebook":99,
+      "inventory":118
     },
     "wasd":{
-      "up":"up_arrow",
-      "right":"right_arrow",
-      "down":"down_arrow",
-      "left": "left_arrow",
-      "interaction":"e",
-      "blame":"b",
-      "notebook":"n",
-      "inventory":"i"
+      "up":119,
+      "right":100,
+      "down":115,
+      "left": 97,
+      "interaction":101,
+      "blame":98,
+      "notebook":110,
+      "inventory":105
     },
     "user":{
       "up":"",
