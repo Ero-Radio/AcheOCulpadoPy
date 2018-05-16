@@ -1,5 +1,8 @@
 import arcade
 
+def New():
+    return Inventory()
+
 class Inventory(list):
 
     def __init__(self):

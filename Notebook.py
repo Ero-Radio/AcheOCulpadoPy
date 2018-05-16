@@ -1,5 +1,8 @@
 import arcade
 
+def New():
+    return Notebook()
+
 class Notebook(dict):
 
     def __init__(self):

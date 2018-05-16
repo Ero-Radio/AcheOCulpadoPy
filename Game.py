@@ -5,8 +5,6 @@ import Scene
 import Player
 import CollectableObject
 import InteractiveObject
-import Notebook
-import Inventory
 
 class Game(arcade.Window):
 
@@ -15,8 +13,8 @@ class Game(arcade.Window):
         self.menuWin = None
         self.scenes = None
         self.player = None
-        self.collectableList = None
-        self.colisionsList = None
+        self.collectableList = []
+        self.colisionsList = []
         self.physicsEngine = None
         self.keys = None
 
@@ -31,39 +29,31 @@ class Game(arcade.Window):
                 "interaction":False
                 }
         self.keymap = Settings.load_settings()
+        self.player = Player.New()
+        self.colisionsList = arcade.SpriteList()
+        self.collectableList = CollectableObject.CollectableList()
+        self.physicsEngine = arcade.PhysicsEngineSimple(self.player, self.colisionsList)
 
     def on_draw(self):
         arcade.start_render()
-        self.menuWin.draw()
-        '''
-        self.scene.draw()
+        #self.menuWin.draw()
+        #self.scene.draw()
+        self.colisionsList.draw(self.player)
+        self.collectableList.draw(self.player)
         self.player.draw()
-        self.walls.draw(self.player)
-        self.collectables.draw(self.player)
-        self.notebook.draw()
-        self.inventory.draw()
-
-        self.t2.interact(sairFatequia)
-        '''
 
     def update(self, dt):
-        '''
-        self.t1.interact()
-        self.setWin.update(self.keys)
-        if not (self.notebook.active or self.inventory.active):
+        #self.setWin.update(self.keys)
+        if not (self.player.notebook.active or self.player.inventory.active):
             self.player.update(self.keys)
-        for c in self.collectables:
+        for c in self.collectableList:
             if(c.isInteracting(self.player) and self.keys["interaction"]):
-                self.inventory.append(c)
-                self.collectables.remove(c)
+                self.player.inventory.append(c)
+                self.collectableList.remove(c)
 
         self.physicsEngine.update()
-        '''
+
     def on_key_press(self, key, mod):
-        print(key)
-        if key == self.keymap["interaction"]:
-            print("Interraco puto")
-        '''
         if key == arcade.key.UP or key == arcade.key.W:
             self.keys["up"] = True
         if key == arcade.key.RIGHT or key == arcade.key.D:
@@ -83,7 +73,7 @@ class Game(arcade.Window):
                 self.notebook.active = False
             if(self.inventory.active):
                 self.inventory.active = False
-        '''
+
     def on_key_release(self, key, mod):
         if key == arcade.key.UP or key == arcade.key.W:
             self.keys["up"] = False
