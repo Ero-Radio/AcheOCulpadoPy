@@ -10,7 +10,7 @@ def new():
 
 class Player(arcade.Sprite):
     def __init__(self):
-        super().__init__("wolele.png", 2)
+        super().__init__("wolele.png", 1)
         self.center_x = 100
         self.center_y = 100
         self.notebook = Notebook.New()
@@ -36,3 +36,17 @@ class Player(arcade.Sprite):
             self.change_y = 0
         if(not KeysState.keys["left"] and not KeysState.keys["right"]):
             self.change_x = 0
+
+
+        if(KeysState.keys["inventory"]):
+            self.inventory.active = True
+
+        if(KeysState.keys["notebook"]):
+            self.notebook.active = True
+
+
+        if(KeysState.keys["esc"]):
+            self.inventory.active = False
+            self.notebook.active = False
+
+

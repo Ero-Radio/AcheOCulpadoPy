@@ -3,14 +3,12 @@ import Menu
 import Settings
 import Scene
 import Player
-import CollectableObject
-import InteractiveObject
 import KeysState
 
 class Game(arcade.Window):
 
     def __init__(self):
-        super().__init__(800, 600, "Ache o Culpado")
+        super().__init__(1280, 720, "Ache o Culpado")
         self.menuWin = None
         self.scenes = None
         self.player = None
@@ -37,8 +35,9 @@ class Game(arcade.Window):
             self.menuWin.update()
 
         if(self.scenes):
-            #self.scenes.update()
             self.player.update()
+            self.scenes.update(self.player)
+
 
 
     def on_key_press(self, key, mod):
@@ -52,6 +51,12 @@ class Game(arcade.Window):
             KeysState.keys["left"] = True
         if key == arcade.key.E:
             KeysState.keys["interaction"] = True
+        if key == arcade.key.I:
+            KeysState.keys["inventory"] = True
+        if key == arcade.key.N:
+            KeysState.keys["notebook"] = True
+        if key == arcade.key.ESCAPE:
+            KeysState.keys["esc"] = True
 
         if key == arcade.key.ENTER:
             if(self.menuWin):
@@ -73,3 +78,9 @@ class Game(arcade.Window):
             KeysState.keys["left"] = False
         if key == arcade.key.E:
             KeysState.keys["interaction"] = False
+        if key == arcade.key.I:
+            KeysState.keys["inventory"] = False
+        if key == arcade.key.N:
+            KeysState.keys["notebook"] = False
+        if key == arcade.key.ESCAPE:
+            KeysState.keys["esc"] = False
