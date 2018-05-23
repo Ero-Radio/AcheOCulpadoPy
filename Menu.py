@@ -1,4 +1,5 @@
 import arcade
+import KeysState
 
 def Window():
     return MenuWindow()
@@ -25,12 +26,12 @@ class MenuWindow:
         selected = self.menu[self.item]
         arcade.draw_text(selected[0], selected[1], selected[2], arcade.color.RED, 55)
 
-    def update(self, keys):
-        if(keys["right"] or keys["up"]):
+    def update(self):
+        if(KeysState.keys["right"] or KeysState.keys["up"]):
             if not self.hasChanged:
                 self.item += 1
                 self.hasChanged = True
-        elif(keys["left"] or keys["down"]):
+        elif(KeysState.keys["left"] or KeysState.keys["down"]):
             if not self.hasChanged:
                 self.item -= 1
                 self.hasChanged = True

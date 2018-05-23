@@ -5,6 +5,7 @@ import Scene
 import Player
 import CollectableObject
 import InteractiveObject
+import KeysState
 
 class Game(arcade.Window):
 
@@ -13,75 +14,62 @@ class Game(arcade.Window):
         self.menuWin = None
         self.scenes = None
         self.player = None
-        self.collectableList = []
-        self.colisionsList = []
+
         self.physicsEngine = None
-        self.keys = None
 
     def setup(self):
         print("Setup")
         self.menuWin = Menu.Window()
-        self.keys = {
-                "up":False,
-                "right":False,
-                "down":False,
-                "left":False,
-                "interaction":False
-                }
-        self.keymap = Settings.load_settings()
-        self.player = Player.New()
-        self.colisionsList = arcade.SpriteList()
-        self.collectableList = CollectableObject.CollectableList()
-        self.physicsEngine = arcade.PhysicsEngineSimple(self.player, self.colisionsList)
+        KeysState.keymap = Settings.load_settings()
 
     def on_draw(self):
         arcade.start_render()
-        #self.menuWin.draw()
-        #self.scene.draw()
-        self.colisionsList.draw(self.player)
-        self.collectableList.draw(self.player)
-        self.player.draw()
+        if(self.menuWin):
+            self.menuWin.draw()
+
+        if(self.scenes):
+            self.scenes.draw(self.player)
+            self.player.draw()
+
 
     def update(self, dt):
-        #self.setWin.update(self.keys)
-        if not (self.player.notebook.active or self.player.inventory.active):
-            self.player.update(self.keys)
-        for c in self.collectableList:
-            if(c.isInteracting(self.player) and self.keys["interaction"]):
-                self.player.inventory.append(c)
-                self.collectableList.remove(c)
+        if(self.menuWin):
+            self.menuWin.update()
 
-        self.physicsEngine.update()
+        if(self.scenes):
+            #self.scenes.update()
+            self.player.update()
+
 
     def on_key_press(self, key, mod):
         if key == arcade.key.UP or key == arcade.key.W:
-            self.keys["up"] = True
+            KeysState.keys["up"] = True
         if key == arcade.key.RIGHT or key == arcade.key.D:
-            self.keys["right"] = True
+            KeysState.keys["right"] = True
         if key == arcade.key.DOWN or key == arcade.key.S:
-            self.keys["down"] = True
+            KeysState.keys["down"] = True
         if key == arcade.key.LEFT or key == arcade.key.A:
-            self.keys["left"] = True
+            KeysState.keys["left"] = True
         if key == arcade.key.E:
-            self.keys["interaction"] = True
-        if key == arcade.key.N:
-            self.menuWin.active = False
-        if key == arcade.key.I:
-            self.menuWin.active = True
-        if key == arcade.key.ESCAPE:
-            if(self.notebook.active):
-                self.notebook.active = False
-            if(self.inventory.active):
-                self.inventory.active = False
+            KeysState.keys["interaction"] = True
+
+        if key == arcade.key.ENTER:
+            if(self.menuWin):
+                if(self.menuWin.item == 0):
+                    self.player = Player.new()
+                    self.scenes = Scene.new(0)
+                    self.menuWin = None
+
+
 
     def on_key_release(self, key, mod):
         if key == arcade.key.UP or key == arcade.key.W:
-            self.keys["up"] = False
+            KeysState.keys["up"] = False
         if key == arcade.key.RIGHT or key == arcade.key.D:
-            self.keys["right"] = False
+            KeysState.keys["right"] = False
         if key == arcade.key.DOWN or key == arcade.key.S:
-            self.keys["down"] = False
+            KeysState.keys["down"] = False
         if key == arcade.key.LEFT or key == arcade.key.A:
-            self.keys["left"] = False
+            KeysState.keys["left"] = False
         if key == arcade.key.E:
-            self.keys["interaction"] = False
+            KeysState.keys["interaction"] = False

@@ -2,6 +2,12 @@ import arcade
 import Util
 import InteractiveObject
 
+def newObject():
+	return CollectableObject()
+
+def newList():
+	return CollectableList();
+
 class CollectableObject(InteractiveObject.InteractiveObject):
 
     def __init__(self):
