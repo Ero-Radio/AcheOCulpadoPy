@@ -8,7 +8,7 @@ def new(sceneNo):
 class Scene:
 
     def __init__(self, sceneNo):
-        self.bg = arcade.load_texture("wololo.png")
+        self.bg = arcade.load_texture("Wololo.png")
         self.collectableList = CollectableObject.newList()
         self.colisionsList = []
         self.loadSceneObjects(sceneNo)
