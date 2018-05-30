@@ -8,9 +8,9 @@ class MenuWindow:
     def __init__(self):
         self.menu = [
                 ("Iniciar", 100, 200),
-                ("Pontuação", 200, 300),
-                ("Opções", 300, 400),
-                ("Sair", 400, 500)
+                ("Pontuação", 100, 300),
+                ("Opções", 100, 400),
+                ("Sair", 100, 500)
                     ]
         self.item = 0
         self.hasChanged = False
