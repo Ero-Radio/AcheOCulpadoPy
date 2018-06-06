@@ -13,7 +13,7 @@ class Game(arcade.Window):
         self.menuWin = None
         self.scenes = None
         self.player = None
-
+        self.activeScene = None
         self.physicsEngine = None
 
     def setup(self):
@@ -27,7 +27,7 @@ class Game(arcade.Window):
             self.menuWin.draw()
 
         if(self.scenes):
-            self.scenes.draw(self.player)
+            self.scenes[self.activeScene].draw(self.player)
             self.player.draw()
 
 
@@ -37,7 +37,7 @@ class Game(arcade.Window):
 
         if(self.scenes):
             self.player.update()
-            self.scenes.update(self.player)
+            self.scenes[self.activeScene].update(self.player)
 
 
 
@@ -59,11 +59,32 @@ class Game(arcade.Window):
         if key == arcade.key.ESCAPE:
             KeysState.keys["esc"] = True
 
+
+        if key == arcade.key.KEY_1:
+            self.activeScene = 0
+        if key == arcade.key.KEY_2:
+            self.activeScene = 1
+            if self.scenes[1] is None:
+                self.scenes[1] = Scene.new(1)
+        if key == arcade.key.KEY_3:
+            self.activeScene = 2
+            if self.scenes[2] is None:
+                self.scenes[2] = Scene.new(2)
+        if key == arcade.key.KEY_4:
+            self.activeScene = 3
+            if self.scenes[3] is None:
+                self.scenes[3] = Scene.new(3)
+
         if key == arcade.key.ENTER:
             if(self.menuWin):
                 if(self.menuWin.item == 0):
                     self.player = Player.new()
-                    self.scenes = Scene.new(0)
+                    self.scenes = []
+                    self.scenes.append(Scene.new(0))
+                    self.scenes.append(None)
+                    self.scenes.append(None)
+                    self.scenes.append(None)
+                    self.activeScene = 0
                     self.menuWin = None
 
                 elif(self.menuWin.item == 3):
