@@ -4,6 +4,7 @@ import Settings
 import Scene
 import Player
 import KeysState
+import sys
 
 class Game(arcade.Window):
 
@@ -64,6 +65,10 @@ class Game(arcade.Window):
                     self.player = Player.new()
                     self.scenes = Scene.new(0)
                     self.menuWin = None
+
+                elif(self.menuWin.item == 3):
+                    sys.exit(0)
+
 
 
 

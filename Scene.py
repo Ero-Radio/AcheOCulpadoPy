@@ -2,13 +2,19 @@ import arcade
 import CollectableObject
 import KeysState
 
+scenesBackgrounds = ["img/backgrounds/CETAF.png",
+                     "img/backgrounds/Estacao.png",
+                     "img/backgrounds/Parque.png",
+                     "img/backgrounds/Shopping.png",
+                        ]
+
 def new(sceneNo):
     return Scene(sceneNo)
 
 class Scene:
 
     def __init__(self, sceneNo):
-        self.bg = arcade.load_texture("Wololo.png")
+        self.bg = arcade.load_texture(scenesBackgrounds[sceneNo])
         self.collectableList = CollectableObject.newList()
         self.colisionsList = []
         self.loadSceneObjects(sceneNo)

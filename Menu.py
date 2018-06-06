@@ -15,16 +15,23 @@ class MenuWindow:
         self.item = 0
         self.hasChanged = False
         self.active = True
+        self.bandeira = arcade.load_texture("img/assets/bandeira.jpg")
 
     def draw(self):
         if not self.active:
             return
 
+        arcade.draw_texture_rectangle(1280/2,
+            720/2,
+            1280,
+            720,
+            self.bandeira,
+            0)
         for item in self.menu:
-            arcade.draw_text(item[0], item[1], item[2], arcade.color.WHITE, 50)
+            arcade.draw_text(item[0], item[1], item[2], arcade.color.GRAY, 50)
 
         selected = self.menu[self.item]
-        arcade.draw_text(selected[0], selected[1], selected[2], arcade.color.RED, 55)
+        arcade.draw_text(selected[0], selected[1], selected[2], arcade.color.RED, 50)
 
     def update(self):
         if(KeysState.keys["right"] or KeysState.keys["up"]):
