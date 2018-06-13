@@ -10,7 +10,7 @@ def new():
 
 class Player(arcade.Sprite):
     def __init__(self):
-        super().__init__("img/chars/prot_masc.png", 0.07)
+        super().__init__("img/chars/small/prot_masc.png")
         self.center_x = 100
         self.center_y = 100
         self.notebook = Notebook.New()
