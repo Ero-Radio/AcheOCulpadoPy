@@ -1,0 +1,22 @@
+[
+	{
+		"background":"img/backgrounds/CETAF.png",
+		"npcs":[10, 20, 30],
+		"objects":[]
+	},
+	{
+		"background":"img/backgrounds/Estacao.png",
+		"npcs":[10, 20, 30],
+		"objects":[]
+	},
+	{
+		"background":"img/backgrounds/Parque.png",
+		"npcs":[10, 20, 30],
+		"objects":[]
+	},
+	{
+		"background":"img/backgrounds/Shopping.png",
+		"npcs":[10, 20, 30],
+		"objects":[]
+	}
+]

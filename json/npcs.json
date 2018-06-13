@@ -1,0 +1,11 @@
+[
+	{ "nome": "nome",
+	  "sprite": "spritepath",
+	  "positions":[[10, 10], [30, 40]],
+	  "lines":[
+	  			"Fala 01",
+	  			"Fala 02"
+	  		  ] 
+
+	}
+]
