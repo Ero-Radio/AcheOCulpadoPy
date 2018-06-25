@@ -36,11 +36,6 @@ class Scene:
                 player.inventory.append(co)
                 self.collectableList.remove(co)
 
-        for co in self.collectableList:
-            if(co.isInteracting(player) and KeysState.keys["interaction"]):
-                player.inventory.append(co)
-                self.collectableList.remove(co)
-
 
 
     def loadSceneObjects(self, sceneNo):
