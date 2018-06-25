@@ -1,7 +1,18 @@
 [
-	{ "nome": "nome",
+	{ "nome": "Jadielson Vital",
 	  "sprite": "spritepath",
-	  "positions":[[10, 10], [30, 40]],
+		"positions":[[10, 10], [30, 40]],
+		"screen": "",
+	  "lines":[
+	  			"Fala 01",
+	  			"Fala 02"
+	  		  ] 
+
+	},
+	{ "nome": "José Luiz Datena",
+	  "sprite": "spritepath",
+		"positions":[[10, 10], [30, 40]],
+		"screen": "",
 	  "lines":[
 	  			"Fala 01",
 	  			"Fala 02"
