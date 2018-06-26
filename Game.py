@@ -5,7 +5,7 @@ import Scene
 import Player
 import KeysState
 import sys
-import HUD
+import hud
 import time
 
 class Game(arcade.Window):
@@ -17,11 +17,9 @@ class Game(arcade.Window):
         self.player = None
         self.activeScene = None
         self.physicsEngine = None
-        self.hud = None
 
     def setup(self):
         print("Setup")
-        self.hud = HUD.new()
         self.menuWin = Menu.Window()
         KeysState.keymap = Settings.load_settings()
 
@@ -33,7 +31,7 @@ class Game(arcade.Window):
         if(self.scenes):
             self.scenes[self.activeScene].draw(self.player)
             self.player.draw()
-            self.hud.draw()
+            hud.clock()
 
 
     def update(self, dt):
@@ -43,7 +41,6 @@ class Game(arcade.Window):
         if(self.scenes):
             self.player.update()
             self.scenes[self.activeScene].update(self.player)
-            self.hud.update()
 
 
 
@@ -102,7 +99,7 @@ class Game(arcade.Window):
                 if(self.menuWin.item == 0):
                     self.player = Player.new()
                     self.scenes = []
-                    HUD.startTime = time.time()
+                    hud.startTime = time.time()
                     self.scenes.append(Scene.new(0))
                     self.scenes.append(None)
                     self.scenes.append(None)

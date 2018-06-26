@@ -8,16 +8,14 @@ import time
 	Contantes da HUD
 '''
 textColor = (255, 255, 255)
-
-<<<<<<< HEAD
 dialogFillColor = (155, 155, 155)
 dialogOutlineColor = (0, 0, 0)
 
 '''
 	Variaveis de inicialização
 '''
-sWidth = 500
-sHeigh = 500
+sWidth = 1280
+sHeigh = 720
 startTime = time.time()
 
 def textAt(*, x, y, text):
