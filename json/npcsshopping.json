@@ -1,0 +1,56 @@
+[
+	{
+		"nome": "Atendente da loja Pear",
+		"lines": ["Um garoto veio aqui, querendo ver um dos nossos notebooks Bur, eu mostrei para ele e deixe sozinho por momento, no outro ele estava tentando instalar um outro sistema operacional, tive que chamar o segurança, mas quando chegamos lá só tinha várias linhas sem sentido na tela, acho que é linguagem de programação. Características? Bem, ele estava de mochila e estava com dois amigos.",
+		"Atendente presente no dia dos acontecimentos disse que um garoto fez coisas estranhas com um dos computadores, estava acompanhado com amigos, possíveis cúmplices. O hacker é definitivamente um homem.",
+		"Olha eu sei que foi aqui que tudo começou, mas não significa que fui eu, nenhum criminoso em sã consciência ficaria no lugar crime."]
+	},
+	{
+		"nome": "Marilia",
+		"lines": ["Pela 8º vez eu não sou daquele seriado! Ahh, você é um agente federal... Droga! Quero dizer, apesar de eu estudar aqui em Cão Saetano eu não tenho nada a ver com o caso do roubo nacional, e não sei do que você está falando, apesar de gostar de vir aqui para o shopping com frequência eu não estou envolvida com isso, só estou aqui lendo meu livro de um boneco de um jogo.",
+		"Interrogada foi evasiva, apesar de confirmar que é uma visitante frequente do shopping, também demonstrou um certa descontentamento ao ser interrogada. Definitivamente está escondendo algo.",
+		"Bom, pelo menos vou poder ler meu livro em paz, mesmo sendo inocente."]
+	},
+	{
+		"nome": "Bribo",
+		"lines": ["Eu não acredito que ele levou mais um computador, mas é u... Que foi? Agentes federais? É... Alguém se ferrou, merecido. Não sei dizer quem foi, mas que ele está aqui em Cão Saetano, se ele parecer com um personagem de videogame é uma mera coincidência.",
+		"Individuo deixa explicito que conhece o hacker, apesar de responder grosseiramente e nada objetivamente. Interrogado de certa forma admite que o culpado é homem.",
+		"Você só pode estar brincando... Você errou, muito, tipo, MUUUUUITO."]
+	},
+	{
+		"nome": "Informante",
+		"lines": ["Eu sei quem é que vocês estão procurando, por um preço posso entregar ele(a) de bandeja. Como assim não tem dinheiro? Sem negócio então. Único conselho que posso te dar é que você está procurando no lugar onde ele(a) menos frequenta.",
+		"Informantes sempre sabem de tudo, felizmente nosso protagonista não é alguém indecente para realizar tal feito corrupto. Ao menos aqui entregue é que o hacker não frequenta shopping.",
+		"Sério mesmo? Não sei se vocês foram espertos e tentaram me prender para abrir o bico, ou muito burros por acreditar que o culpado seja eu."]
+	},
+	{
+		"nome": "Migelo",
+		"lines": ["Está vendo aquela atendente do CFK? Ela me serviu com sorriso no rosto... Eu... Eu estou apaixonado? Tira os olhos da minha futura esposa!",
+		"Interrogado está muito entretido com a atendente da rede fast-food CFK. Não aparenta ter envolvimento ou conhecimento sobre o crime.",
+		"Meu único crime foi ter se apaixonado por aquela atendente. Ah, o amor."]
+	},
+	{
+		"nome": "Dorinho",
+		"lines": ["Sim foi eu quem hackei todas as contas do Brasil, eu sou de mais, vou entrar para história, vai tentar me prender? Tente, com o dinheiro que peguei, o seu dinheiro, poderei pagar minha fiança mesmo.",
+		"O indivíduo se entregou de bandeja, o que é um pouco estranho, seria ele mesmo?",
+		"Na verdade não fui eu, oficiais, eu só queria me gabar para os meus amigos. Como assim enganar autoridades da lei também é um crime?"]
+	},
+	{
+		"nome": "Rob Broward",
+		"lines": ["Esse RPG é muito bom! Você pode escalar todas as montanhas do jogo e matar dragões. Recomendo compra-lo e falar dele para todos os seus amigos, não escute as críticas negativas e compre todas as DLCs e itens da Creation Club. Compre também todas as 11 versões dele se você quer jogar onde e quando quiser o mesmo jogo com diferenças quase mínimas!",
+		"Todas as tentativas em questionar o indivíduo foram a água abaixo, seu único crime são suas habilidades carismáticas, que resultaram no protagonista comprando o jogo dele. It just works!",
+		"Eu não fiz crime nenhum, sou o homem mais honesto do mundo. Por sinal, compre Skyr..."]
+	},
+	{
+		"nome": "Estou furioso!",
+		"lines": ["Eu não acredito que não estou sendo pago para fazer todas essa frases de NPCs! GRRRRRRRRR!",
+		"Cadê os meus direitos trabalhistas? Roteirista também é gente!",
+		"O roteirista do jogo saiu porque não foi pago para o cargo, mas não se preocupem, esse NPC era inocente mesmo. GAME OVER"]
+	},
+	{
+		"nome": "Xeroque Rolmes",
+		"lines": ["Xeroque Rolmes, detetive particular. Devo dizer que o responsável pelo crime pode estar na estação Cão Saetano, ou no Shopping Cão Saetano, no Parque Mico Chendes ou na CETAF. Isso vocês já sabem? Então que tal procuras pistas nesses lugares, sim, existem pistas neles.",
+		"Ora ora, parece que temos um Xeroque Rolmes aqui.",
+		"Por que o detetive seria o culpado? Vocês estão jogando muito Chuva Pesada. Ops, spoilers."]
+	}
+]

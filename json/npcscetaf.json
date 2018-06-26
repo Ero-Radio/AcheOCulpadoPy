@@ -1,0 +1,82 @@
+[
+	{ "nome": "Jadielson Vital",
+	  "sprite": "spritepath",
+		"positions":[[10, 10], [30, 40]],
+		"screen": "",
+	  "lines":[
+	  			"fala 01",
+	  			"fala 02"
+	  		  ] 
+
+	},
+	{ "nome": "Gato",
+		"lines":[
+			"Miau! :3",
+			"Não sabe ao certo porque interrogar um gato, ou isso é uma pessoa vestida de gato? De qualquer forma, que criatura fofa.",
+			"Miau! >:("
+			]
+	},
+	{
+		"name": "Zenic",
+		"lines":[
+			"Estou tentando jogar meu jogo aqui em paz, mas meus amigos ficam implicando sobre os computadores que eu levo para casa. Eles não veem que eu quero montar um supercomputador, chamarei de CDHU: Computador Dinâmico Hebe Ultradinâmico. Eu precisei colocar algum nome aleatório no H porque eu gosto de H nas siglas, e o U é para ressaltar que é dinâmico.",
+			"Interrogado leva computadores para sua casa para fazer um computador dinâmico. Mas para qual fim? De qualquer forma, ele evadiu a pergunta como se ela nunca fosse feita.",
+			"Kek, vocês me descobriram, ora ora. Demorou quantas jogadas/minutos para me achar?"
+		]
+	},
+	{
+		"nome": "Bibliotecário",
+		"lines":[
+			"Eu não sou um NPC! Tem um garoto que pegou vários livros de arquitetura computacional na minha biblioteca, provavelmente ele deve estar aqui ainda. Que tal conversar com ele para ele devolver os livros? Como assim eu estou dando uma sidequest? Eu já falei que não sou um NPC!",
+			"Interrogado tem sérios problemas de autoestima, não aparenta ser o culpado. Também informa que um garoto, possível aluno, pegou livros de arquitetura computacional.",
+			"Estou feliz que você percebeu que não sou um NPC e sim um personagem primário do jogo, mas não sou o culpado. Agora pegue 5 cabras de Aanto Sndré e leve para Bão Senardo."
+		]
+	},
+	{
+		"nome": "Shirley",
+		"lines":[
+			"Preste atenção no que todos falam, o culpado pode não aparentar ser ele, mas essa pessoa é mais engenhosa do que pensa, um gênio do mal, de fato.",
+			"Interrogada aparenta saber que é o hacker, apesar de não confirmar sua identidade, possivelmente está com medo de algo caia sobre ela. Ela também informa que culpado pode não aparentar ser ele.",
+			"Eu não sou egocêntrica a ponto de falar de mim mesma, pessoa errada, amigo."
+		]
+	},
+	{
+		"nome": "Natalherme",
+		"lines":[
+			"Como vocês sabem, Xunil é o melhor sistema operacional, se o nosso país usasse, isso não teria acontecido, pois claramente Xunil é superior em todos os aspectos, até eu poderia hackear. Falando nisso, quer ouvir um pouco sobre a palavra da física quântica?",
+			"O indivíduo não parece ter envolvimento com o ataque hacker. Apesar de saber fazer um ótimo marketing para sistemas operacionais.",
+			"XUNIL É MELHOR QUE A JANELA!!"
+		]
+	},
+	{	"nome": "Mumillo",
+		"lines":[
+			"Mas porque julgar um indivíduo que realizou um feito de proporções épicas e históricas como invadir a rede nacional de bancos? Apesar de trazer prejuízos óbvios a federação, é como inibir os grandes artistas de entrarem para história!",
+			"Um tanto inusitado alguém romantizar tal feito, talvez o interrogado saiba de alguma coisa.",
+			"Niet, me salva deste mundo perfeito desses seres que jamais alcançaram tal perfeição. Eu não sou o responsável de tal trivialidade de roubar os bancos."
+		]
+	},
+	{
+		"nome": "Logaritmus",
+		"lines":[
+			"Eu não entendo o fascínio do ser humano por jogos como esse. Isso mesmo, pessoa que está controlando o \"agente federal\", estou quebrando a quarta parede para dizer para viver a vida.",
+			"Nosso jogo tem várias quebrar de quarta parede, não? A ideia é essa mesmo, um jogo investigativo com um tom humorístico.",
+			"Parabéns, você ficou de saco cheio e encerrou o jogo mais cedo, agora viva a vida."
+		]
+	},
+	{
+		"nome": "Bigol",
+		"lines":[
+			"Kawai Desu Omai Wa Tsundere Atashi Otaku Ne? HOOOOOOH" ,
+			"É o quê?",
+			"Ehhhhhh Nani!?!?"
+		]
+	},
+	{
+		"nome": "Cara misterioso",
+		"lines":[
+			"Não confie em ninguém, nem mesmo em mim.",
+			"Um tanto estranho tal informação.",
+			"Deverás astuto, mas não sou eu."
+		]
+	}
+]
