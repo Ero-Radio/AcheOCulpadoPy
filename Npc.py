@@ -34,3 +34,7 @@ class NPCList(list):
     def draw(self, player):
         for npc in self:
             npc.draw(player)
+    
+    def update(self):
+
+        pass

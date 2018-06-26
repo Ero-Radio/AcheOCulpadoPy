@@ -9,6 +9,7 @@ import time
 '''
 textColor = (255, 255, 255)
 
+<<<<<<< HEAD
 dialogFillColor = (155, 155, 155)
 dialogOutlineColor = (0, 0, 0)
 
@@ -69,4 +70,3 @@ def clock():
 	timeWidth = sWidth - sWidth/1800 * elapsedTime
 	arcade.draw_lrtb_rectangle_filled(0, timeWidth, sHeigh, sHeigh-10, dialogFillColor)
 	textAt(x=sWidth-80, y=sHeigh-30, text="{:02}:{:02}".format(mins, secs))
-

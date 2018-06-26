@@ -17,9 +17,11 @@ class Game(arcade.Window):
         self.player = None
         self.activeScene = None
         self.physicsEngine = None
+        self.hud = None
 
     def setup(self):
         print("Setup")
+        self.hud = HUD.new()
         self.menuWin = Menu.Window()
         KeysState.keymap = Settings.load_settings()
 
@@ -31,7 +33,7 @@ class Game(arcade.Window):
         if(self.scenes):
             self.scenes[self.activeScene].draw(self.player)
             self.player.draw()
-            HUD.draw()
+            self.hud.draw()
 
 
     def update(self, dt):
@@ -41,7 +43,7 @@ class Game(arcade.Window):
         if(self.scenes):
             self.player.update()
             self.scenes[self.activeScene].update(self.player)
-            HUD.update()
+            self.hud.update()
 
 
 

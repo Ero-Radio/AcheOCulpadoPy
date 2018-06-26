@@ -1,9 +1,10 @@
 import arcade
+import CollectableObject
 
 def New():
     return Inventory()
 
-class Inventory(list):
+class Inventory(CollectableObject.CollectableList):
 
     def __init__(self):
         super().__init__()
