@@ -40,17 +40,17 @@ class Scene:
 
 
     def loadSceneObjects(self, sceneNo):
-        npcs = None
-        with open('json/npcs.json', 'r') as f:
-            npcs = json.load(f)
-        
-        for x in range(len(npcs)):
-            npc = CollectableObject.newObject(npcs[x]['nome'])
-            self.collectableList.append(npc)
-        
-        # if(sceneNo == 0):
-        # #     for x in range(1,10):
-        # #         # self.collectableList.append(CollectableObject.newObject())
-        # #         # self.npcList.append(Npc.newNPC())
+        # npcs = None
+        # with open('json/npcs.json', 'r', encoding="utf-8") as f:
+        #     npcs = json.load(f)
 
-        # # pass
+        # for x in range(len(npcs)):
+        #     npc = CollectableObject.newObject(npcs[x]['nome'])
+        #     self.collectableList.append(npc)
+
+        if(sceneNo == 0):
+            for x in range(1,10):
+                self.collectableList.append(CollectableObject.newObject())
+                self.npcList.append(Npc.newNPC())
+
+        pass

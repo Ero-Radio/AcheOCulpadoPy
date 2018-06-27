@@ -2,7 +2,7 @@ import arcade
 import Util
 import InteractiveObject
 
-def newObject(nome):
+def newObject(nome="nada"):
 	return CollectableObject(nome)
 
 def newList():

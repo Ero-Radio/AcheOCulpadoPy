@@ -7,6 +7,7 @@ import KeysState
 import sys
 import hud
 import time
+import WorldMap
 
 class Game(arcade.Window):
 
@@ -17,14 +18,18 @@ class Game(arcade.Window):
         self.player = None
         self.activeScene = None
         self.physicsEngine = None
+        self.mx=0
+        self.my=0
 
     def setup(self):
         print("Setup")
         self.menuWin = Menu.Window()
         KeysState.keymap = Settings.load_settings()
+        self.wm = WorldMap.New(1280, 720)
 
     def on_draw(self):
         arcade.start_render()
+        self.wm.draw()
         if(self.menuWin):
             self.menuWin.draw()
 
