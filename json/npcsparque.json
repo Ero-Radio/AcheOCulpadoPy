@@ -1,0 +1,80 @@
+[
+	{
+		"nome": "Kiui",
+		"sprite": "img/chars/kiwi.png",
+		"sprite_small": "img/chars/small/kiwi.png",
+		"lines":[
+			"Antigamente me deram um apelido de um hippie e agora de uma fruta, por que ninguém quer saber do meu nome verdadeiro? Se vocês procuram o responsável por tal crime, devem procurar por alguém culto e inteligente, como eu, mas não eu. Sou 100% inocente, juro.",
+			"Individuo foi evasivo em suas respostas, diz que o sujeito é culto e inteligente, mesmo admitindo ter essas características.",
+			"Eu já disse que não fui eu!"
+		]
+	},
+	{	
+		"nome": "Tiozão do Zap",
+		"sprite": "img/chars/tiozao_fitness.png",
+		"sprite_small": "img/chars/small/tiozao_fitness.png",
+		"lines":[
+			"Eu vi um indivíduo correndo aqui com um computador em mãos, e depois outras pessoas com raiva correndo atrás dele. Saudades de antigamente quando Cão Saetano não tinha essas indecências contra a paz do cidadão. Para onde ele foi? Para estação, creio eu.",
+			"Interrogado aponta que uma pessoa criou uma possível confusão com uma multidão, o mesmo estava com um computador em mãos. Sugere procurar na estação Cão Saetano.",
+			"Eu nem sei mexer nos compiuters, na época da dentadura isso não acontecia."
+		]
+	},
+	{
+		"nome": "Pictor",
+		"sprite": "img/chars/pictor.png",
+		"sprite_small": "img/chars/small/pictor.png",
+		"lines":[
+			"Eu estou vendo o mato, me deixa! Hackers? Claramente conseguiria fazer melhor, mas não fui eu. Quem fez deve estar andando com um notebook por ai, aparentemente parece que é o único objeto que todo mundo tem esses dias de hoje." ,
+			"Não aparenta ser o hacker, no entanto, apresentou um ponto interessante, talvez o culpado tenha bastante interesse por tecnologia.",
+			"Olha, se fosse eu estaria a quilômetros de distância daqui, eu acho."
+		]
+	},
+
+	{
+		"nome": "Pessoa Confusa",
+		"sprite": "img/chars/pessoa_confusa.png",
+		"sprite_small": "img/chars/small/pessoa_confusa.png",
+		"lines":[
+			"Existe um mensagem estranha em algum lugar da cidade, não parece ser latim, e sim que as letras estão embaralhadas, o que poderia significar?",
+			"Pode não ser relacionada ao caso, mas vale a pena investigar.",
+			"Capitão relatividade e Doutor Filosofia, me ajudem!"
+		]
+	},
+	{
+		"nome": "Projeto Supremo da Umisoft",
+		"sprite": "img/chars/proj_supremo_umisoft.png",
+		"sprite_small": "img/chars/small/proj_supremo_umisoft.png",
+		"lines":[
+			"Seu eu sei de alguma coisa? Talvez eu saiba, talvez não. É algo confuso, no entanto nem tanto, entendeu?",
+			"Investigado apresenta ser um projeto secreto da empresa de jogo Umisoft, conhecida por seus jogos bugados. A frase do indivíduo comprova a situação. Não a relação com o caso do hacker.",
+			"Você errou, ou não, muito pelo contrário."
+		]
+	},
+	{
+		"nome": "Funcionário da Umisoft",
+		"sprite": "img/chars/func_umisoft.png",
+		"sprite_small": "img/chars/small/func_umisoft.png",
+		"lines":[
+			"Não tenho ciência desse assunto, oficial, nem permissão para dizer por que estou aqui.",
+			"Funcionário da Umisoft nega a dar qualquer informação, muito provavelmente não está relacionado com o caso do hacker.",
+			"Chamarei os advogados, o projeto deve continuar."
+		]
+	},
+	{
+		"nome": "Vick Victória",
+		"sprite": "img/chars/vick_victoria.png",
+		"sprite_small": "img/chars/small/vick_victoria.png",
+		"lines":[
+			"O responsável pelo caso, pode ser muito bem ela, por que não ser uma mulher? O que você está insinuando?" ,
+			"Suspeita alega que o hacker, pode ser na verdade hacker. Será que ela está insinuando algo?",
+			"O que você está insinuando? Que eu sou a culpada? Onde está minha liberdade de expressão?"
+		]
+	},
+	{
+		"nome": "Desenho grosseiro no chão",
+		"lines":[
+		"Hey, o que você está fazendo? Eu não posso dormir no chão em paz. Desenho? Como assim?! Eu sou uma pessoa, que preconceito é esse? Só por que eu sou feio?",
+		"Aparentemente ele só estava tomando um banho de sol, muito provavelmente não ter relação com o crime.",
+		"Vocês, agentes federais, são todos iguais! Vêem uma pessoa feia e já acham que ela fez alguma coisa errada."]
+	}
+]

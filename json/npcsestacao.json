@@ -1,0 +1,72 @@
+[
+	{
+		"nome": "Guarda da UTQO(União dos Trens Quase Operacionais)",
+		"sprite": "img/chars/guarda_utqo.png",
+		"sprite_small": "img/chars/small/guarda_utqo.png",
+		"lines": [
+			"Tinha um moleque gordinho deitado na plataforma por sei lá qual motivo, revistamos ele e tinha um notebook e partes velhas de um computador. Ele é bem suspeito, um dos amigos dele ainda está aqui no outro lado da estação, outro estranho por sinal.",
+			"Vale a pena descobrir quem é esse indivíduo, checar amigo presente na estação.",
+			"Acusou um guarda de um crime, parabéns. Até onde esse país vai?"
+		]
+	},
+	{
+		"nome": "Vronic (Um magricela com uma toca de raposa laranja)",
+		"sprite": "img/chars/vronic.png",
+		"sprite_small": "img/chars/small/vronic.png",
+		"lines": [
+			"Eu conheço algumas pessoas entendem de programação, mas não acredito que um amigo meu faria uma coisa dessas, ao menos sem dar uma parte para mim claro. Brincadeiras à parte um dos meus amigos deve estar em algum lugar da cidade, você pode perguntar para ele.",
+			"O interrogado diz que conhece pessoas que tem conhecimento em programação, apesar de não acreditar que foi um deles, fez uma brincadeira suspeita. Recomendou conversarmos com um de seus amigos que está na cidade.",
+			"Mas não foi eu, Vronic me ajuda! GOTTA GO FAST!!!"
+		]
+	},
+	{
+		"nome": "Vendedor Ambulante",
+		"sprite": "img/chars/vendedor_ambulante.png",
+		"sprite_small": "img/chars/small/vendedor_ambulante.png",
+		"lines": [
+			"Não vendo nada senhor guarda, sou trabalhador justo e não vendo nada de ilegal nos trens e esta... Atividade suspeita? Bom eu vi um garoto mexendo com um notebook no trem, quero dizer, em que pais ele acha que estamos? Outro dia teve uma louca que entrou no trem falando para respeitar os idosos, acho que ela tinha uns 30 anos, e ainda estava falando que tinha nojo desse pais, o mundo está louco.",
+			"Um indivíduo mexendo no notebook no trem é realmente estranho, mas não ilegal. Vale a pena verificar se o mesmo indivíduo foi visto.",
+			"Eu só vendo mercadorias 100% legitimas e legais aos olhos da lei, eu nem sei o que é hackear."
+		]
+	},
+	{
+		"nome": "Contato",
+		"sprite": "img/chars/contato.png",
+		"sprite_small": "img/chars/smallcontato.png",
+		"lines": [
+			"Ouvi de um cara, que falou com outro cara, que falou com uma mulher, que falou com uma outra pessoa, que falou com um cara, que falou com um gato, que falou com o cara que hackeou as contas do país, eu juro.  Onde ele está agora? Só o gato pode te responder.",
+			"Interrogado aparentemente evasivo, não respondeu absolutamente nada, passando a responsabilidade para um gato.",
+			"Você devia ter falado com o gato antes me acusar, tudo está perdido agora."
+		]
+	},
+	{
+		"nome": "Ancap",
+		"sprite": "img/chars/ancap.png",
+		"sprite_small": "img/chars/small/ancap.png",
+		"lines": [
+			"Imposto é roubo! Vocês sugam nosso dinheiro e ainda estão querendo mais? Não vou dizer nada, sonegar é em legitima defesa!",
+			"Claramente descontente com o governo, além da falta de respeito com autoridades. Possivelmente orquestrou alguma coisa contra o governo.",
+			"Mamãe, o vilão estado quer me pegar! Por favor, eu sou só mais um chato que reclama de tudo nas redes sociais e não faz absolutamente mais nada."
+		]
+	},
+	{
+		"nome": "Aluno Preocupado",
+		"sprite": "img/chars/aluno_preocupado.png",
+		"sprite_small": "img/chars/small/aluno_preocupado.png",
+		"lines": [
+			"Eu poderia até te ajudar com isso, mas infelizmente estou meio ocupado tentado aprender sobre a BGI.",
+			"O aluno aparenta ser da Cetaf, uma faculdade de tecnologia. Vale ressaltar que o indivíduo negou passar quaisquer possíveis informações para fazer uma piada de tempos que éramos felizes e nem sabíamos.",
+			"Não! Se você me prender eu não vou poder apresentar meu jogo de fim de semestre."
+		]
+	},
+	{
+		"nome": "Pessoa que foi enganada",
+		"sprite": "img/chars/pessoa_que_foi_enganada.png",
+		"sprite_small": "img/chars/small/pessoa_que_foi_enganada.png",
+		"lines": [
+			"Roubo dos bancos? Existe coisa pior, um cara me veio falar que esse jogo era bom e me fez comprar todas as versões dele, agora eu estou decepcionado e mais pobre.",
+			"Possivelmente não tem relação com o crime em questão, mas deve ser algo a investigar após o caso do hacker.",
+			"Hey, o único que foi roubado aqui fui eu, primeiro minha conta, depois esse jogos, e ainda por cima estou sendo preso? Que mundo injusto, meu!"
+		]
+	}
+]
