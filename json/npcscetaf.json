@@ -1,15 +1,7 @@
 [
-	{ "nome": "Jadielson Vital",
-	  "sprite": "spritepath",
-		"positions":[[10, 10], [30, 40]],
-		"screen": "",
-	  "lines":[
-	  			"fala 01",
-	  			"fala 02"
-	  		  ] 
-
-	},
 	{ "nome": "Gato",
+		"sprite": "img/chars/fatecat.png",
+		"sprite_small": "img/chars/small/fatecat.png",
 		"lines":[
 			"Miau! :3",
 			"Não sabe ao certo porque interrogar um gato, ou isso é uma pessoa vestida de gato? De qualquer forma, que criatura fofa.",

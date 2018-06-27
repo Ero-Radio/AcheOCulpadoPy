@@ -51,6 +51,8 @@
 	},
 	{
 		"nome": "Dorinho",
+		"sprite": "img/chars/malfoi.png",
+		"sprite_small": "img/chars/small/malfoi.png",
 		"lines": [
 			"Sim foi eu quem hackei todas as contas do Brasil, eu sou de mais, vou entrar para história, vai tentar me prender? Tente, com o dinheiro que peguei, o seu dinheiro, poderei pagar minha fiança mesmo.",
 			"O indivíduo se entregou de bandeja, o que é um pouco estranho, seria ele mesmo?",
