@@ -18,6 +18,8 @@
 	},
 	{
 		"name": "Zenic",
+		"sprite": "img/chars/zenic.png",
+		"sprite_small": "img/chars/small/zenic.png",
 		"lines":[
 			"Estou tentando jogar meu jogo aqui em paz, mas meus amigos ficam implicando sobre os computadores que eu levo para casa. Eles não veem que eu quero montar um supercomputador, chamarei de CDHU: Computador Dinâmico Hebe Ultradinâmico. Eu precisei colocar algum nome aleatório no H porque eu gosto de H nas siglas, e o U é para ressaltar que é dinâmico.",
 			"Interrogado leva computadores para sua casa para fazer um computador dinâmico. Mas para qual fim? De qualquer forma, ele evadiu a pergunta como se ela nunca fosse feita.",
@@ -26,6 +28,8 @@
 	},
 	{
 		"nome": "Bibliotecário",
+		"sprite": "img/chars/bibliotecario.png",
+		"sprite_small": "img/chars/small/bibliotecario.png",
 		"lines":[
 			"Eu não sou um NPC! Tem um garoto que pegou vários livros de arquitetura computacional na minha biblioteca, provavelmente ele deve estar aqui ainda. Que tal conversar com ele para ele devolver os livros? Como assim eu estou dando uma sidequest? Eu já falei que não sou um NPC!",
 			"Interrogado tem sérios problemas de autoestima, não aparenta ser o culpado. Também informa que um garoto, possível aluno, pegou livros de arquitetura computacional.",
@@ -34,6 +38,8 @@
 	},
 	{
 		"nome": "Shirley",
+		"sprite": "img/chars/shirley.png",
+		"sprite_small": "img/chars/small/shirley.png",
 		"lines":[
 			"Preste atenção no que todos falam, o culpado pode não aparentar ser ele, mas essa pessoa é mais engenhosa do que pensa, um gênio do mal, de fato.",
 			"Interrogada aparenta saber que é o hacker, apesar de não confirmar sua identidade, possivelmente está com medo de algo caia sobre ela. Ela também informa que culpado pode não aparentar ser ele.",
@@ -42,6 +48,8 @@
 	},
 	{
 		"nome": "Natalherme",
+		"sprite": "img/chars/natalherme.png",
+		"sprite_small": "img/chars/small/natalherme.png",
 		"lines":[
 			"Como vocês sabem, Xunil é o melhor sistema operacional, se o nosso país usasse, isso não teria acontecido, pois claramente Xunil é superior em todos os aspectos, até eu poderia hackear. Falando nisso, quer ouvir um pouco sobre a palavra da física quântica?",
 			"O indivíduo não parece ter envolvimento com o ataque hacker. Apesar de saber fazer um ótimo marketing para sistemas operacionais.",
@@ -49,6 +57,8 @@
 		]
 	},
 	{	"nome": "Mumillo",
+		"sprite": "img/chars/mumilo.png",
+		"sprite_small": "img/chars/small/mumilo.png",
 		"lines":[
 			"Mas porque julgar um indivíduo que realizou um feito de proporções épicas e históricas como invadir a rede nacional de bancos? Apesar de trazer prejuízos óbvios a federação, é como inibir os grandes artistas de entrarem para história!",
 			"Um tanto inusitado alguém romantizar tal feito, talvez o interrogado saiba de alguma coisa.",
@@ -57,6 +67,8 @@
 	},
 	{
 		"nome": "Logaritmus",
+		"sprite": "img/chars/logaritmus.png",
+		"sprite_small": "img/chars/small/logaritmus.png",
 		"lines":[
 			"Eu não entendo o fascínio do ser humano por jogos como esse. Isso mesmo, pessoa que está controlando o \"agente federal\", estou quebrando a quarta parede para dizer para viver a vida.",
 			"Nosso jogo tem várias quebrar de quarta parede, não? A ideia é essa mesmo, um jogo investigativo com um tom humorístico.",
@@ -65,6 +77,8 @@
 	},
 	{
 		"nome": "Bigol",
+		"sprite": "img/chars/bigol.png",
+		"sprite_small": "img/chars/small/bigol.png",
 		"lines":[
 			"Kawai Desu Omai Wa Tsundere Atashi Otaku Ne? HOOOOOOH" ,
 			"É o quê?",
@@ -73,10 +87,12 @@
 	},
 	{
 		"nome": "Cara misterioso",
+		"sprite": "img/chars/cara_misterioso.png",
+		"sprite_small": "img/chars/small/cara_misterioso.png",
 		"lines":[
 			"Não confie em ninguém, nem mesmo em mim.",
 			"Um tanto estranho tal informação.",
-			"Deverás astuto, mas não sou eu."
+			"Deveras astuto, mas não sou eu."
 		]
 	}
 ]
