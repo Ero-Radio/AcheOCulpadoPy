@@ -22,15 +22,16 @@ class Player(arcade.Sprite):
         self.inventory.draw()
 
     def update(self):
-        super().update()
-        if(KeysState.keys["up"]):
-            self.change_y = PLAYER_SPEED
-        if(KeysState.keys["down"]):
-            self.change_y = -PLAYER_SPEED
-        if(KeysState.keys["left"]):
-            self.change_x = -PLAYER_SPEED
-        if(KeysState.keys["right"]):
-            self.change_x = PLAYER_SPEED
+        if(not self.notebook.active and not  self.inventory.active):
+            super().update()
+            if(KeysState.keys["up"]):
+                self.change_y = PLAYER_SPEED
+            if(KeysState.keys["down"]):
+                self.change_y = -PLAYER_SPEED
+            if(KeysState.keys["left"]):
+                self.change_x = -PLAYER_SPEED
+            if(KeysState.keys["right"]):
+                self.change_x = PLAYER_SPEED
 
         if(not KeysState.keys["up"] and not KeysState.keys["down"]):
             self.change_y = 0
@@ -46,5 +47,8 @@ class Player(arcade.Sprite):
 
         if(self.inventory.active):
             self.inventory.update()
+
+        if(self.notebook.active):
+            self.notebook.update()
 
 

@@ -10,19 +10,24 @@ temp =  ["img/chars/small/zenic.png",
 		"img/chars/small/mumilo.png",
 		]
 
-def newNPC():
-	return NPC()
+def newNPC(name, lines, spritePath):
+	return NPC(name, lines, spritePath)
 
 def newNPCList():
 	return NPCList();
 
 class NPC(InteractiveObject.InteractiveObject):
 
-    def __init__(self):
+    def __init__(self, name, lines, spritePath):
         super().__init__()
-        self.texture = arcade.load_texture(temp[random.randint(0, 4)])
+        self.texture = arcade.load_texture(spritePath)
         self.interactionRadius = 100
-        self.name = "Wolala {}".format(self)
+        self.name = name
+        self.lines = lines
+
+    def draw(self, player):
+        super().draw(player)
+        arcade.draw_texture_rectangle(self.center_x, self.center_y, self.texture.width, self.texture.height, self.texture, 0)
 
 class NPCList(list):
 
@@ -34,7 +39,7 @@ class NPCList(list):
     def draw(self, player):
         for npc in self:
             npc.draw(player)
-    
+
     def update(self):
 
         pass

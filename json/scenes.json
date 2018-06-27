@@ -1,22 +1,355 @@
 [
 	{
 		"background":"img/backgrounds/CETAF.png",
-		"npcs":[10, 20, 30],
+		"npcs":[
+    { "nome": "Gato",
+        "sprite": "img/chars/fatecat.png",
+        "sprite_small": "img/chars/small/fatecat.png",
+        "lines":[
+            "Miau! :3",
+            "Não sabe ao certo porque interrogar um gato, ou isso é uma pessoa vestida de gato? De qualquer forma, que criatura fofa.",
+            "Miau! >:("
+            ]
+    },
+    {
+        "nome": "Zenic",
+        "sprite": "img/chars/zenic.png",
+        "sprite_small": "img/chars/small/zenic.png",
+        "lines":[
+            "Estou tentando jogar meu jogo aqui em paz, mas meus amigos ficam implicando sobre os computadores que eu levo para casa.\nEles não veem que eu quero montar um supercomputador, chamarei de CDHU: Computador Dinâmico Hebe Ultradinâmico.\nEu precisei colocar algum nome aleatório no H porque eu gosto de H nas siglas, e o U é para ressaltar que é dinâmico.",
+            "Interrogado leva computadores para sua casa para fazer um computador dinâmico. Mas para qual fim? De qualquer forma, ele evadiu a pergunta como se ela nunca fosse feita.",
+            "Kek, vocês me descobriram, ora ora. Demorou quantas jogadas/minutos para me achar?"
+        ]
+    },
+    {
+        "nome": "Bibliotecário",
+        "sprite": "img/chars/bibliotecario.png",
+        "sprite_small": "img/chars/small/bibliotecario.png",
+        "lines":[
+            "Eu não sou um NPC! Tem um garoto que pegou vários livros de arquitetura computacional na minha biblioteca, provavelmente ele\ndeve estar aqui ainda. Que tal conversar com ele para ele devolver os livros? Como assim eu estou dando uma sidequest?\nEu já falei que não sou um NPC!",
+            "Interrogado tem sérios problemas de autoestima, não aparenta ser o culpado. Também informa que um garoto, possível aluno, pegou livros de arquitetura computacional.",
+            "Estou feliz que você percebeu que não sou um NPC e sim um personagem primário do jogo, mas não sou o culpado. Agora pegue 5 cabras de Aanto Sndré e leve para Bão Senardo."
+        ]
+    },
+    {
+        "nome": "Shirley",
+        "sprite": "img/chars/shirley.png",
+        "sprite_small": "img/chars/small/shirley.png",
+        "lines":[
+            "Preste atenção no que todos falam, o culpado pode não aparentar ser ele, mas essa pessoa é mais engenhosa do que pensa,\num gênio do mal, de fato.",
+            "Interrogada aparenta saber que é o hacker, apesar de não confirmar sua identidade, possivelmente está com medo de algo caia sobre ela. Ela também informa que culpado pode não aparentar ser ele.",
+            "Eu não sou egocêntrica a ponto de falar de mim mesma, pessoa errada, amigo."
+        ]
+    },
+    {
+        "nome": "Natalherme",
+        "sprite": "img/chars/natalherme.png",
+        "sprite_small": "img/chars/small/natalherme.png",
+        "lines":[
+            "Como vocês sabem, Xunil é o melhor sistema operacional, se o nosso país usasse, isso não teria acontecido, pois claramente\n Xunil é superior em todos os aspectos, até eu poderia hackear. Falando nisso, quer ouvir um pouco sobre a palavra da física\nquântica?",
+            "O indivíduo não parece ter envolvimento com o ataque hacker. Apesar de saber fazer um ótimo marketing para sistemas operacionais.",
+            "XUNIL É MELHOR QUE A JANELA!!"
+        ]
+    },
+    {   "nome": "Mumillo",
+        "sprite": "img/chars/mumilo.png",
+        "sprite_small": "img/chars/small/mumilo.png",
+        "lines":[
+            "Mas porque julgar um indivíduo que realizou um feito de proporções épicas e históricas como invadir a rede nacional de bancos? \nApesar de trazer prejuízos óbvios a federação, é como inibir os grandes artistas de entrarem para história!",
+            "Um tanto inusitado alguém romantizar tal feito, talvez o interrogado saiba de alguma coisa.",
+            "Niet, me salva deste mundo perfeito desses seres que jamais alcançaram tal perfeição. Eu não sou o responsável de tal trivialidade de roubar os bancos."
+        ]
+    },
+    {
+        "nome": "Logaritmus",
+        "sprite": "img/chars/logaritmus.png",
+        "sprite_small": "img/chars/small/logaritmus.png",
+        "lines":[
+            "Eu não entendo o fascínio do ser humano por jogos como esse. Isso mesmo, pessoa que está controlando o \"agente federal\",\nestou quebrando a quarta parede para dizer para viver a vida.",
+            "Nosso jogo tem várias quebrar de quarta parede, não? A ideia é essa mesmo, um jogo investigativo com um tom humorístico.",
+            "Parabéns, você ficou de saco cheio e encerrou o jogo mais cedo, agora viva a vida."
+        ]
+    },
+    {
+        "nome": "Bigol",
+        "sprite": "img/chars/bigol.png",
+        "sprite_small": "img/chars/small/bigol.png",
+        "lines":[
+            "Kawai Desu Omai Wa Tsundere Atashi Otaku Ne? HOOOOOOH" ,
+            "É o quê?",
+            "Ehhhhhh Nani!?!?"
+        ]
+    },
+    {
+        "nome": "Cara misterioso",
+        "sprite": "img/chars/cara_misterioso.png",
+        "sprite_small": "img/chars/small/cara_misterioso.png",
+        "lines":[
+            "Não confie em ninguém, nem mesmo em mim.",
+            "Um tanto estranho tal informação.",
+            "Deveras astuto, mas não sou eu."
+        ]
+    }
+]
+,
 		"objects":[]
 	},
 	{
 		"background":"img/backgrounds/Estacao.png",
-		"npcs":[10, 20, 30],
+		"npcs":[
+    {
+        "nome": "Guarda da UTQO(União dos Trens Quase Operacionais)",
+        "sprite": "img/chars/guarda_utqo.png",
+        "sprite_small": "img/chars/small/guarda_utqo.png",
+        "lines": [
+            "Tinha um moleque gordinho deitado na plataforma por sei lá qual motivo, revistamos ele e tinha um notebook e partes velhas de um computador. Ele é bem suspeito, um dos amigos dele ainda está aqui no outro lado da estação, outro estranho por sinal.",
+            "Vale a pena descobrir quem é esse indivíduo, checar amigo presente na estação.",
+            "Acusou um guarda de um crime, parabéns. Até onde esse país vai?"
+        ]
+    },
+    {
+        "nome": "Vronic (Um magricela com uma toca de raposa laranja)",
+        "sprite": "img/chars/vronic.png",
+        "sprite_small": "img/chars/small/vronic.png",
+        "lines": [
+            "Eu conheço algumas pessoas entendem de programação, mas não acredito que um amigo meu faria uma coisa dessas, ao menos sem dar uma parte para mim claro. Brincadeiras à parte um dos meus amigos deve estar em algum lugar da cidade, você pode perguntar para ele.",
+            "O interrogado diz que conhece pessoas que tem conhecimento em programação, apesar de não acreditar que foi um deles, fez uma brincadeira suspeita. Recomendou conversarmos com um de seus amigos que está na cidade.",
+            "Mas não foi eu, Vronic me ajuda! GOTTA GO FAST!!!"
+        ]
+    },
+    {
+        "nome": "Vendedor Ambulante",
+        "sprite": "img/chars/vendedor_ambulante.png",
+        "sprite_small": "img/chars/small/vendedor_ambulante.png",
+        "lines": [
+            "Não vendo nada senhor guarda, sou trabalhador justo e não vendo nada de ilegal nos trens e esta... Atividade suspeita? Bom eu vi um garoto mexendo com um notebook no trem, quero dizer, em que pais ele acha que estamos? Outro dia teve uma louca que entrou no trem falando para respeitar os idosos, acho que ela tinha uns 30 anos, e ainda estava falando que tinha nojo desse pais, o mundo está louco.",
+            "Um indivíduo mexendo no notebook no trem é realmente estranho, mas não ilegal. Vale a pena verificar se o mesmo indivíduo foi visto.",
+            "Eu só vendo mercadorias 100% legitimas e legais aos olhos da lei, eu nem sei o que é hackear."
+        ]
+    },
+    {
+        "nome": "Contato",
+        "sprite": "img/chars/contato.png",
+        "sprite_small": "img/chars/small/contato.png",
+        "lines": [
+            "Ouvi de um cara, que falou com outro cara, que falou com uma mulher, que falou com uma outra pessoa, que falou com um cara, que falou com um gato, que falou com o cara que hackeou as contas do país, eu juro.  Onde ele está agora? Só o gato pode te responder.",
+            "Interrogado aparentemente evasivo, não respondeu absolutamente nada, passando a responsabilidade para um gato.",
+            "Você devia ter falado com o gato antes me acusar, tudo está perdido agora."
+        ]
+    },
+    {
+        "nome": "Ancap",
+        "sprite": "img/chars/ancap.png",
+        "sprite_small": "img/chars/small/ancap.png",
+        "lines": [
+            "Imposto é roubo! Vocês sugam nosso dinheiro e ainda estão querendo mais? Não vou dizer nada, sonegar é em legitima defesa!",
+            "Claramente descontente com o governo, além da falta de respeito com autoridades. Possivelmente orquestrou alguma coisa contra o governo.",
+            "Mamãe, o vilão estado quer me pegar! Por favor, eu sou só mais um chato que reclama de tudo nas redes sociais e não faz absolutamente mais nada."
+        ]
+    },
+    {
+        "nome": "Aluno Preocupado",
+        "sprite": "img/chars/aluno_preocupado.png",
+        "sprite_small": "img/chars/small/aluno_preocupado.png",
+        "lines": [
+            "Eu poderia até te ajudar com isso, mas infelizmente estou meio ocupado tentado aprender sobre a BGI.",
+            "O aluno aparenta ser da Cetaf, uma faculdade de tecnologia. Vale ressaltar que o indivíduo negou passar quaisquer possíveis informações para fazer uma piada de tempos que éramos felizes e nem sabíamos.",
+            "Não! Se você me prender eu não vou poder apresentar meu jogo de fim de semestre."
+        ]
+    },
+    {
+        "nome": "Pessoa que foi enganada",
+        "sprite": "img/chars/pessoa_que_foi_enganada.png",
+        "sprite_small": "img/chars/small/pessoa_que_foi_enganada.png",
+        "lines": [
+            "Roubo dos bancos? Existe coisa pior, um cara me veio falar que esse jogo era bom e me fez comprar todas as versões dele, agora eu estou decepcionado e mais pobre.",
+            "Possivelmente não tem relação com o crime em questão, mas deve ser algo a investigar após o caso do hacker.",
+            "Hey, o único que foi roubado aqui fui eu, primeiro minha conta, depois esse jogos, e ainda por cima estou sendo preso? Que mundo injusto, meu!"
+        ]
+    }
+],
 		"objects":[]
 	},
 	{
 		"background":"img/backgrounds/Parque.png",
-		"npcs":[10, 20, 30],
+		"npcs":[
+    {
+        "nome": "Kiui",
+        "sprite": "img/chars/kiwi.png",
+        "sprite_small": "img/chars/small/kiwi.png",
+        "lines":[
+            "Antigamente me deram um apelido de um hippie e agora de uma fruta, por que ninguém quer saber do meu nome verdadeiro? Se vocês procuram o responsável por tal crime, devem procurar por alguém culto e inteligente, como eu, mas não eu. Sou 100% inocente, juro.",
+            "Individuo foi evasivo em suas respostas, diz que o sujeito é culto e inteligente, mesmo admitindo ter essas características.",
+            "Eu já disse que não fui eu!"
+        ]
+    },
+    {
+        "nome": "Tiozão do Zap",
+        "sprite": "img/chars/tiozao_fitness.png",
+        "sprite_small": "img/chars/small/tiozao_fitness.png",
+        "lines":[
+            "Eu vi um indivíduo correndo aqui com um computador em mãos, e depois outras pessoas com raiva correndo atrás dele. Saudades de antigamente quando Cão Saetano não tinha essas indecências contra a paz do cidadão. Para onde ele foi? Para estação, creio eu.",
+            "Interrogado aponta que uma pessoa criou uma possível confusão com uma multidão, o mesmo estava com um computador em mãos. Sugere procurar na estação Cão Saetano.",
+            "Eu nem sei mexer nos compiuters, na época da dentadura isso não acontecia."
+        ]
+    },
+    {
+        "nome": "Pictor",
+        "sprite": "img/chars/pictor.png",
+        "sprite_small": "img/chars/small/pictor.png",
+        "lines":[
+            "Eu estou vendo o mato, me deixa! Hackers? Claramente conseguiria fazer melhor, mas não fui eu. Quem fez deve estar andando com um notebook por ai, aparentemente parece que é o único objeto que todo mundo tem esses dias de hoje." ,
+            "Não aparenta ser o hacker, no entanto, apresentou um ponto interessante, talvez o culpado tenha bastante interesse por tecnologia.",
+            "Olha, se fosse eu estaria a quilômetros de distância daqui, eu acho."
+        ]
+    },
+
+    {
+        "nome": "Pessoa Confusa",
+        "sprite": "img/chars/pessoa_confusa.png",
+        "sprite_small": "img/chars/small/pessoa_confusa.png",
+        "lines":[
+            "Existe um mensagem estranha em algum lugar da cidade, não parece ser latim, e sim que as letras estão embaralhadas, o que poderia significar?",
+            "Pode não ser relacionada ao caso, mas vale a pena investigar.",
+            "Capitão relatividade e Doutor Filosofia, me ajudem!"
+        ]
+    },
+    {
+        "nome": "Projeto Supremo da Umisoft",
+        "sprite": "img/chars/proj_supremo_umisoft.png",
+        "sprite_small": "img/chars/small/proj_supremo_umisoft.png",
+        "lines":[
+            "Seu eu sei de alguma coisa? Talvez eu saiba, talvez não. É algo confuso, no entanto nem tanto, entendeu?",
+            "Investigado apresenta ser um projeto secreto da empresa de jogo Umisoft, conhecida por seus jogos bugados. A frase do indivíduo comprova a situação. Não a relação com o caso do hacker.",
+            "Você errou, ou não, muito pelo contrário."
+        ]
+    },
+    {
+        "nome": "Funcionário da Umisoft",
+        "sprite": "img/chars/func_umisoft.png",
+        "sprite_small": "img/chars/small/func_umisoft.png",
+        "lines":[
+            "Não tenho ciência desse assunto, oficial, nem permissão para dizer por que estou aqui.",
+            "Funcionário da Umisoft nega a dar qualquer informação, muito provavelmente não está relacionado com o caso do hacker.",
+            "Chamarei os advogados, o projeto deve continuar."
+        ]
+    },
+    {
+        "nome": "Vick Victória",
+        "sprite": "img/chars/vick_victoria.png",
+        "sprite_small": "img/chars/small/vick_victoria.png",
+        "lines":[
+            "O responsável pelo caso, pode ser muito bem ela, por que não ser uma mulher? O que você está insinuando?" ,
+            "Suspeita alega que o hacker, pode ser na verdade hacker. Será que ela está insinuando algo?",
+            "O que você está insinuando? Que eu sou a culpada? Onde está minha liberdade de expressão?"
+        ]
+    },
+    {
+        "nome": "Desenho grosseiro no chão",
+        "sprite": "img/chars/coisachao.png",
+        "sprite_small": "img/chars/small/coisachao.png",
+        "lines":[
+        "Hey, o que você está fazendo? Eu não posso dormir no chão em paz. Desenho? Como assim?! Eu sou uma pessoa, que preconceito é esse? Só por que eu sou feio?",
+        "Aparentemente ele só estava tomando um banho de sol, muito provavelmente não ter relação com o crime.",
+        "Vocês, agentes federais, são todos iguais! Vêem uma pessoa feia e já acham que ela fez alguma coisa errada."]
+    }
+],
 		"objects":[]
 	},
 	{
 		"background":"img/backgrounds/Shopping.png",
-		"npcs":[10, 20, 30],
+		"npcs":[
+    {
+        "nome": "Atendente da loja Pear",
+        "sprite": "img/chars/atendente_loja_pear.png",
+        "sprite_small": "img/chars/small/atendente_loja_pear.png",
+        "lines": [
+            "Um garoto veio aqui, querendo ver um dos nossos notebooks Bur, eu mostrei para ele e deixe sozinho por momento, no outro ele estava tentando instalar um outro sistema operacional, tive que chamar o segurança, mas quando chegamos lá só tinha várias linhas sem sentido na tela, acho que é linguagem de programação. Características? Bem, ele estava de mochila e estava com dois amigos.",
+            "Atendente presente no dia dos acontecimentos disse que um garoto fez coisas estranhas com um dos computadores, estava acompanhado com amigos, possíveis cúmplices. O hacker é definitivamente um homem.",
+            "Olha eu sei que foi aqui que tudo começou, mas não significa que fui eu, nenhum criminoso em sã consciência ficaria no lugar crime."
+        ]
+    },
+    {
+        "nome": "Marilia",
+        "sprite": "img/chars/hanna_baker.png",
+        "sprite_small": "img/chars/small/hanna_baker.png",
+        "lines": [
+            "Pela 8º vez eu não sou daquele seriado! Ahh, você é um agente federal... Droga! Quero dizer, apesar de eu estudar aqui em Cão Saetano eu não tenho nada a ver com o caso do roubo nacional, e não sei do que você está falando, apesar de gostar de vir aqui para o shopping com frequência eu não estou envolvida com isso, só estou aqui lendo meu livro de um boneco de um jogo.",
+            "Interrogada foi evasiva, apesar de confirmar que é uma visitante frequente do shopping, também demonstrou um certa descontentamento ao ser interrogada. Definitivamente está escondendo algo.",
+            "Bom, pelo menos vou poder ler meu livro em paz, mesmo sendo inocente."
+        ]
+    },
+    {
+        "nome": "Bribo",
+        "sprite": "img/chars/bribo.png",
+        "sprite_small": "img/chars/small/bribo.png",
+        "lines": [
+                "Eu não acredito que ele levou mais um computador, mas é u... Que foi? Agentes federais? É... Alguém se ferrou, merecido. Não sei dizer quem foi, mas que ele está aqui em Cão Saetano, se ele parecer com um personagem de videogame é uma mera coincidência.",
+            "Individuo deixa explicito que conhece o hacker, apesar de responder grosseiramente e nada objetivamente. Interrogado de certa forma admite que o culpado é homem.",
+            "Você só pode estar brincando... Você errou, muito, tipo, MUUUUUITO."
+        ]
+    },
+    {
+        "nome": "Informante",
+        "sprite": "img/chars/informante.png",
+        "sprite_small": "img/chars/small/informante.png",
+        "lines": [
+            "Eu sei quem é que vocês estão procurando, por um preço posso entregar ele(a) de bandeja. Como assim não tem dinheiro? Sem negócio então. Único conselho que posso te dar é que você está procurando no lugar onde ele(a) menos frequenta.",
+            "Informantes sempre sabem de tudo, felizmente nosso protagonista não é alguém indecente para realizar tal feito corrupto. Ao menos aqui entregue é que o hacker não frequenta shopping.",
+            "Sério mesmo? Não sei se vocês foram espertos e tentaram me prender para abrir o bico, ou muito burros por acreditar que o culpado seja eu."
+        ]
+    },
+    {
+        "nome": "Miguelo",
+        "sprite": "img/chars/miguelo.png",
+        "sprite_small": "img/chars/small/miguelo.png",
+        "lines": [
+            "Está vendo aquela atendente do CFK? Ela me serviu com sorriso no rosto... Eu... Eu estou apaixonado? Tira os olhos da minha futura esposa!",
+            "Interrogado está muito entretido com a atendente da rede fast-food CFK. Não aparenta ter envolvimento ou conhecimento sobre o crime.",
+            "Meu único crime foi ter se apaixonado por aquela atendente. Ah, o amor."
+        ]
+    },
+    {
+        "nome": "Dorinho",
+        "sprite": "img/chars/malfoi.png",
+        "sprite_small": "img/chars/small/malfoi.png",
+        "lines": [
+            "Sim foi eu quem hackei todas as contas do Brasil, eu sou de mais, vou entrar para história, vai tentar me prender? Tente, com o dinheiro que peguei, o seu dinheiro, poderei pagar minha fiança mesmo.",
+            "O indivíduo se entregou de bandeja, o que é um pouco estranho, seria ele mesmo?",
+            "Na verdade não fui eu, oficiais, eu só queria me gabar para os meus amigos. Como assim enganar autoridades da lei também é um crime?"
+        ]
+    },
+    {
+        "nome": "Rob Broward",
+        "sprite": "img/chars/rob_broward.png",
+        "sprite_small": "img/chars/small/rob_broward.png",
+        "lines": [
+            "Esse RPG é muito bom! Você pode escalar todas as montanhas do jogo e matar dragões. Recomendo compra-lo e falar dele para todos os seus amigos, não escute as críticas negativas e compre todas as DLCs e itens da Creation Club. Compre também todas as 11 versões dele se você quer jogar onde e quando quiser o mesmo jogo com diferenças quase mínimas!",
+            "Todas as tentativas em questionar o indivíduo foram a água abaixo, seu único crime são suas habilidades carismáticas, que resultaram no protagonista comprando o jogo dele. It just works!",
+            "Eu não fiz crime nenhum, sou o homem mais honesto do mundo. Por sinal, compre Skyr..."
+        ]
+    },
+    {
+        "nome": "Estou furioso!",
+        "sprite": "img/chars/estou_furioso.png",
+        "sprite_small": "img/chars/small/estou_furioso.png",
+        "lines": [
+            "Eu não acredito que não estou sendo pago para fazer todas essa frases de NPCs! GRRRRRRRRR!",
+            "Cadê os meus direitos trabalhistas? Roteirista também é gente!",
+            "O roteirista do jogo saiu porque não foi pago para o cargo, mas não se preocupem, esse NPC era inocente mesmo. GAME OVER"
+        ]
+    },
+    {
+        "nome": "Xeroque Rolmes",
+        "sprite": "img/chars/xeroque_rolmes.png",
+        "sprite_small": "img/chars/small/xeroque_rolmes.png",
+        "lines": [
+            "Xeroque Rolmes, detetive particular. Devo dizer que o responsável pelo crime pode estar na estação Cão Saetano, ou no Shopping Cão Saetano, no Parque Mico Chendes ou na CETAF. Isso vocês já sabem? Então que tal procuras pistas nesses lugares, sim, existem pistas neles.",
+            "Ora ora, parece que temos um Xeroque Rolmes aqui.",
+            "Por que o detetive seria o culpado? Vocês estão jogando muito Chuva Pesada. Ops, spoilers."
+        ]
+    }
+],
 		"objects":[]
 	}
 ]

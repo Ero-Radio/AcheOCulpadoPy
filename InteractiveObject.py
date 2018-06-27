@@ -13,7 +13,7 @@ class InteractiveObject(CommonObject.CommonObject):
     def draw(self, player):
         # super().draw()
         if(self.isInteracting(player)):
-            arcade.draw_text("Interação", self.center_x, self.center_y+50, arcade.color.PINK, 30)
+            arcade.draw_text("!", self.center_x, self.center_y+50, arcade.color.PINK, 30)
 
     def isInteracting(self, player):
         return Util.dist(player, self) < self.interactionRadius

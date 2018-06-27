@@ -33,7 +33,7 @@ def textAt(*, x, y, text):
 	y: float
 		posição y central do texto
 	"""
-	arcade.draw_text(text, x, y, textColor, 20, font_name=("Impact Regular"))
+	arcade.draw_text(text, x, y, textColor, 20, font_name=("Helvetica"))
 
 
 def dialogBox(text, _cont):
@@ -50,9 +50,9 @@ def dialogBox(text, _cont):
 	"""
 	arcade.draw_rectangle_filled(sWidth/2, 50, sWidth, 100, dialogFillColor)
 	arcade.draw_rectangle_outline(sWidth/2, 50, sWidth-10, 90, dialogOutlineColor, 2)
-	arcade.draw_text(text, 20, 90, textColor, 16, font_name=("Impact Regular"), align="left", anchor_y="top")
+	arcade.draw_text(text, 20, 90, textColor, 16, font_name=("Helvetica"), align="left", anchor_y="top")
 	if(_cont):
-		arcade.draw_text("e para continuar", sWidth-180, 15, textColor, 16, font_name=("Impact Regular"), align="left")
+		arcade.draw_text("e para continuar", sWidth-180, 15, textColor, 16, font_name=("Helvetica"), align="left")
 
 
 def clock():

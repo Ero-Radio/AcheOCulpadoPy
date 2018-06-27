@@ -1,4 +1,5 @@
 import arcade
+import KeysState
 
 def New(sW=1280, sH=720):
     return Notebook(sW, sH)
@@ -11,8 +12,8 @@ class Notebook(dict):
     def __init__(self, sW, sH):
         super().__init__()
         self.active = False
-        self.activeDetails = 2
-        self.activeRegistry = 2
+        self.activeDetails = 0
+        self.activeRegistry = 0
         self.activePage = 0
         self.sW = sW
         self.sH = sH
@@ -74,7 +75,23 @@ class Notebook(dict):
         for k, v in self.items():
             xPos = 110 if i <11 else self.sW/2+12
             yPos= self.sH-130-50*(i%11)
-            arcade.draw_text("{}:\n{}".format(k, v),
+            arcade.draw_text("{}:\n{}".format(k, v[:50]),
                 xPos, yPos, (255, 255, 255), 14,
                 align="left", anchor_x="left",anchor_y="top")
             i+=1
+
+    def update(self):
+        if KeysState.keys["up"]:
+          self.activeRegistry -= 1
+
+          if self.activeRegistry < 0:
+              self.activeRegistry = len(self)-1
+
+        if KeysState.keys["down"]:
+            self.activeRegistry += 1
+
+            if self.activeRegistry > len(self)-1:
+                self.activeRegistry = 0
+
+        KeysState.keys["up"] = False
+        KeysState.keys["down"] = False
