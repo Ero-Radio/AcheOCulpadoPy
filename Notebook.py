@@ -3,7 +3,7 @@ import arcade
 def New(sW=1280, sH=720):
     return Notebook(sW, sH)
 
-dialogFillColor = (155, 155, 155, 100)
+dialogFillColor = (155, 155, 155, 240)
 dialogOutlineColor = (0, 0, 0)
 
 class Notebook(dict):

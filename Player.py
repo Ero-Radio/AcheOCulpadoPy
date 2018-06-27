@@ -14,7 +14,7 @@ class Player(arcade.Sprite):
         self.center_x = 100
         self.center_y = 100
         self.notebook = Notebook.New()
-        self.inventory = Inventory.New()
+        self.inventory = Inventory.New(1280, 720)
 
     def draw(self):
         super().draw()
@@ -48,5 +48,8 @@ class Player(arcade.Sprite):
         if(KeysState.keys["esc"]):
             self.inventory.active = False
             self.notebook.active = False
+
+        if(self.inventory.active):
+            self.inventory.update()
 
 
