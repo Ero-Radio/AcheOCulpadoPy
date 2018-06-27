@@ -1,14 +1,22 @@
 import arcade
 import CollectableObject
+import InteractiveObject
 import KeysState
 import Npc
 import json
 
 scenesBackgrounds = ["img/backgrounds/CETAF.png",
-                     "img/backgrounds/Estacao.png",
                      "img/backgrounds/Parque.png",
+                     "img/backgrounds/Estacao.png",
                      "img/backgrounds/Shopping.png",
                         ]
+
+policeCarPosition = (
+                     (79, 402),
+                     (12, 143),
+                     (654, 31),
+                     (1096, 425)
+                     )
 
 def new(sceneNo):
     return Scene(sceneNo)
@@ -20,18 +28,23 @@ class Scene:
         self.collectableList = CollectableObject.newList()
         self.npcList = Npc.newNPCList()
         self.colisionsList = []
+        self.policeCar = InteractiveObject.InteractiveObject()
+        self.policeCar.center_x = policeCarPosition[sceneNo][0]
+        self.policeCar.center_y = policeCarPosition[sceneNo][1]
         self.loadSceneObjects(sceneNo)
 
     def draw(self, player):
         arcade.draw_texture_rectangle(self.bg.width/2, self.bg.height/2, self.bg.width, self.bg.height, self.bg, 0)
         self.collectableList.draw(player)
         self.npcList.draw(player)
+        self.policeCar.draw(player)
 
     def update(self, player):
 
         '''
         '' Para cada item verifique se está em interação
         '''
+
         for co in self.collectableList:
             if(co.isInteracting(player) and KeysState.keys["interaction"]):
                 player.inventory.append(co)
@@ -48,9 +61,9 @@ class Scene:
         #     npc = CollectableObject.newObject(npcs[x]['nome'])
         #     self.collectableList.append(npc)
 
-        if(sceneNo == 0):
-            for x in range(1,10):
-                self.collectableList.append(CollectableObject.newObject())
-                self.npcList.append(Npc.newNPC())
+        # if(sceneNo == 0):
+        #     for x in range(1,10):
+        #         self.collectableList.append(CollectableObject.newObject())
+        #         self.npcList.append(Npc.newNPC())
 
         pass

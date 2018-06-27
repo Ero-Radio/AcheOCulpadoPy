@@ -29,7 +29,7 @@ class Game(arcade.Window):
 
     def on_draw(self):
         arcade.start_render()
-        self.wm.draw()
+
         if(self.menuWin):
             self.menuWin.draw()
 
@@ -38,14 +38,42 @@ class Game(arcade.Window):
             self.player.draw()
             hud.clock()
 
+            if(self.wm.active):
+                self.wm.draw()
+
+
+
 
     def update(self, dt):
         if(self.menuWin):
             self.menuWin.update()
 
         if(self.scenes):
-            self.player.update()
-            self.scenes[self.activeScene].update(self.player)
+            if(not self.wm.active):
+                self.player.update()
+            aScene  = self.scenes[self.activeScene]
+            aScene.update(self.player)
+            if(aScene.policeCar.isInteracting(self.player) and KeysState.keys["interaction"]):
+                self.wm.active = True
+
+            if(self.wm.active):
+                self.wm.update()
+                if(KeysState.keys["interaction"]):
+                    self.activeScene = self.wm.item
+                    if self.scenes[self.activeScene] is None:
+                        self.scenes[self.activeScene] = Scene.new(self.activeScene)
+                        self.wm.active = False
+
+        KeysState.keys["interaction"] = False
+        KeysState.keys["notebook"] = False
+        KeysState.keys["inventory"] = False
+        KeysState.keys["esc"] = False
+
+
+    def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
+        """ Override this function to add mouse button functionality. """
+        self.mx = x
+        self.my = y
 
 
 
@@ -76,25 +104,6 @@ class Game(arcade.Window):
 
         if key == arcade.key.ESCAPE:
             KeysState.keys["esc"] = True
-
-
-        '''
-        '' Switch Between scenes
-        '''
-        if key == arcade.key.KEY_1:
-            self.activeScene = 0
-        if key == arcade.key.KEY_2:
-            self.activeScene = 1
-            if self.scenes[1] is None:
-                self.scenes[1] = Scene.new(1)
-        if key == arcade.key.KEY_3:
-            self.activeScene = 2
-            if self.scenes[2] is None:
-                self.scenes[2] = Scene.new(2)
-        if key == arcade.key.KEY_4:
-            self.activeScene = 3
-            if self.scenes[3] is None:
-                self.scenes[3] = Scene.new(3)
 
         '''
         '' On menu if enter load the game
@@ -130,15 +139,3 @@ class Game(arcade.Window):
 
         if key == arcade.key.LEFT or key == arcade.key.A:
             KeysState.keys["left"] = False
-
-        if key == arcade.key.E:
-            KeysState.keys["interaction"] = False
-
-        if key == arcade.key.I:
-            KeysState.keys["inventory"] = False
-
-        if key == arcade.key.N:
-            KeysState.keys["notebook"] = False
-
-        if key == arcade.key.ESCAPE:
-            KeysState.keys["esc"] = False

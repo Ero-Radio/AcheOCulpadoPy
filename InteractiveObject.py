@@ -7,10 +7,11 @@ class InteractiveObject(CommonObject.CommonObject):
     def __init__(self):
         super().__init__()
         self.interactionText = "Wololo"
+        self.interactionRadius = 100
         self.state = False
 
     def draw(self, player):
-        super().draw()
+        # super().draw()
         if(self.isInteracting(player)):
             arcade.draw_text("Interação", self.center_x, self.center_y+50, arcade.color.PINK, 30)
 

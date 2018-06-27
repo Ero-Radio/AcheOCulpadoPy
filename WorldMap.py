@@ -16,7 +16,7 @@ class WorldMap:
     def __init__(self, sW, sH):
         super().__init__()
         self.bg = arcade.load_texture( "img/backgrounds/Worldmap.png")
-        self.active = True
+        self.active = False
         self.lastActivation = time.time()
         self.item = 0
         self.locations = [
@@ -57,9 +57,19 @@ class WorldMap:
 
     def update(self):
         if KeysState.keys["left"]:
-          if(time.time()-self.lastActivation > 0.5):
+          self.item -= 1
+          self.lastActivation = time.time()
+
+          if self.item < 0:
+              self.item = len(self.locations)-1
+
+        if KeysState.keys["right"]:
             self.item += 1
             self.lastActivation = time.time()
 
             if self.item > len(self.locations)-1:
                 self.item = 0
+
+        KeysState.keys["left"] = False
+        KeysState.keys["right"] = False
+

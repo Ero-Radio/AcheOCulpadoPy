@@ -39,15 +39,10 @@ class Player(arcade.Sprite):
 
 
         if(KeysState.keys["inventory"]):
-            self.inventory.active = True
+            self.inventory.active = not self.inventory.active
 
         if(KeysState.keys["notebook"]):
-            self.notebook.active = True
-
-
-        if(KeysState.keys["esc"]):
-            self.inventory.active = False
-            self.notebook.active = False
+            self.notebook.active = not self.notebook.active
 
         if(self.inventory.active):
             self.inventory.update()

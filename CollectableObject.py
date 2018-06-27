@@ -12,7 +12,6 @@ class CollectableObject(InteractiveObject.InteractiveObject):
 
     def __init__(self, nome):
         super().__init__()
-        self.interactionRadius = 100
         self.name = "{}".format(nome)
 
 class CollectableList(list):
