@@ -37,6 +37,7 @@ class Game(arcade.Window):
             self.scenes[self.activeScene].draw(self.player)
             self.player.draw()
             hud.clock()
+            # hud.dialogBox("{},{}".format(self.mx, self.my), False)
 
             if(self.wm.active):
                 self.wm.draw()
@@ -49,6 +50,7 @@ class Game(arcade.Window):
             self.menuWin.update()
 
         if(self.scenes):
+
             if(not self.wm.active):
                 self.player.update()
             aScene  = self.scenes[self.activeScene]
@@ -67,6 +69,7 @@ class Game(arcade.Window):
         KeysState.keys["interaction"] = False
         KeysState.keys["notebook"] = False
         KeysState.keys["inventory"] = False
+        KeysState.keys["acuse"] = False
         KeysState.keys["esc"] = False
 
 
@@ -96,6 +99,9 @@ class Game(arcade.Window):
         if key == arcade.key.E:
             KeysState.keys["interaction"] = True
 
+        if key == arcade.key.R:
+            KeysState.keys["acuse"] = True
+
         if key == arcade.key.I:
             KeysState.keys["inventory"] = True
 
@@ -104,6 +110,7 @@ class Game(arcade.Window):
 
         if key == arcade.key.ESCAPE:
             KeysState.keys["esc"] = True
+            self.wm.active = False
 
         '''
         '' On menu if enter load the game

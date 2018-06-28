@@ -4,6 +4,7 @@ keys = {
     "down":False,
     "left":False,
     "interaction":False,
+    "acuse":False,
     "inventory":False,
     "notebook":False,
     "esc":False

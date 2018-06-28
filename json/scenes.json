@@ -3,6 +3,8 @@
 		"background":"img/backgrounds/CETAF.png",
 		"npcs":[
     { "nome": "Gato",
+
+        "pos": [261,258],
         "sprite": "img/chars/fatecat.png",
         "sprite_small": "img/chars/small/fatecat.png",
         "lines":[
@@ -13,6 +15,7 @@
     },
     {
         "nome": "Zenic",
+        "pos": [449,508],
         "sprite": "img/chars/zenic.png",
         "sprite_small": "img/chars/small/zenic.png",
         "lines":[
@@ -23,6 +26,7 @@
     },
     {
         "nome": "Bibliotecário",
+        "pos": [676,445],
         "sprite": "img/chars/bibliotecario.png",
         "sprite_small": "img/chars/small/bibliotecario.png",
         "lines":[
@@ -33,6 +37,8 @@
     },
     {
         "nome": "Shirley",
+
+        "pos": [1249,348],
         "sprite": "img/chars/shirley.png",
         "sprite_small": "img/chars/small/shirley.png",
         "lines":[
@@ -43,6 +49,7 @@
     },
     {
         "nome": "Natalherme",
+        "pos": [512,284],
         "sprite": "img/chars/natalherme.png",
         "sprite_small": "img/chars/small/natalherme.png",
         "lines":[
@@ -52,6 +59,8 @@
         ]
     },
     {   "nome": "Mumillo",
+
+        "pos": [512,156],
         "sprite": "img/chars/mumilo.png",
         "sprite_small": "img/chars/small/mumilo.png",
         "lines":[
@@ -62,6 +71,8 @@
     },
     {
         "nome": "Logaritmus",
+
+        "pos": [1161,47],
         "sprite": "img/chars/logaritmus.png",
         "sprite_small": "img/chars/small/logaritmus.png",
         "lines":[
@@ -72,6 +83,7 @@
     },
     {
         "nome": "Bigol",
+        "pos": [738,218],
         "sprite": "img/chars/bigol.png",
         "sprite_small": "img/chars/small/bigol.png",
         "lines":[
@@ -82,6 +94,7 @@
     },
     {
         "nome": "Cara misterioso",
+        "pos" : [1252,564],
         "sprite": "img/chars/cara_misterioso.png",
         "sprite_small": "img/chars/small/cara_misterioso.png",
         "lines":[
@@ -92,13 +105,23 @@
     }
 ]
 ,
-		"objects":[]
+		"objects":[{
+        "desc":"Folha\n A folha está com a seguinte mensagem: TCI HUSZELE PN\nRITIC. O que isso poderia significar?",
+        "path":"img/assets/Folha.png",
+        "pos":[1141, 484]
+    },
+    {
+        "desc":"Chave",
+        "path":"img/assets/Chave.png",
+        "pos":[945, 488]
+    }]
 	},
 	{
 		"background":"img/backgrounds/Estacao.png",
 		"npcs":[
     {
         "nome": "Guarda da UTQO(União dos Trens Quase Operacionais)",
+        "pos":[766, 316],
         "sprite": "img/chars/guarda_utqo.png",
         "sprite_small": "img/chars/small/guarda_utqo.png",
         "lines": [
@@ -109,6 +132,7 @@
     },
     {
         "nome": "Vronic (Um magricela com uma toca de raposa laranja)",
+        "pos":[224, 619],
         "sprite": "img/chars/vronic.png",
         "sprite_small": "img/chars/small/vronic.png",
         "lines": [
@@ -119,6 +143,7 @@
     },
     {
         "nome": "Vendedor Ambulante",
+        "pos":[835, 458],
         "sprite": "img/chars/vendedor_ambulante.png",
         "sprite_small": "img/chars/small/vendedor_ambulante.png",
         "lines": [
@@ -129,6 +154,7 @@
     },
     {
         "nome": "Contato",
+        "pos":[1095, 119],
         "sprite": "img/chars/contato.png",
         "sprite_small": "img/chars/small/contato.png",
         "lines": [
@@ -139,6 +165,7 @@
     },
     {
         "nome": "Ancap",
+        "pos":[1137, 603],
         "sprite": "img/chars/ancap.png",
         "sprite_small": "img/chars/small/ancap.png",
         "lines": [
@@ -149,6 +176,7 @@
     },
     {
         "nome": "Aluno Preocupado",
+        "pos":[245, 299],
         "sprite": "img/chars/aluno_preocupado.png",
         "sprite_small": "img/chars/small/aluno_preocupado.png",
         "lines": [
@@ -159,6 +187,7 @@
     },
     {
         "nome": "Pessoa que foi enganada",
+        "pos":[480, 208],
         "sprite": "img/chars/pessoa_que_foi_enganada.png",
         "sprite_small": "img/chars/small/pessoa_que_foi_enganada.png",
         "lines": [
@@ -168,13 +197,29 @@
         ]
     }
 ],
-		"objects":[]
+		"objects":[
+            {
+        "desc":"Um Bilhete\nEstá escrito que é de alguém da CETAF (uma\n faculdade de Cão Saetano), conhecida por ser uma faculdade voltada\n a tecnologia da informação. Infelizmente a foto e o nome estão\ndesgastados de tanto uso, mas é possível ver que está escrito\ncurso de Jogos Digitais, vale a pena visitar a instituição.",
+        "path":"img/assets/Bilhete.png",
+        "pos":[236, 141]
+    },
+    {
+        "desc":"Um Desenho\nO que esse rabisco grosseiro poderia significar?",
+        "path":"img/assets/Rabisco.png",
+        "pos":[882, 683]
+    },
+    {
+        "desc":"PC no lixo\nOnde uma pessoa poderia ter achado um computador e\n querer descartar de forma inapropriada? Realmente, um evento\n estranho. CETAF e loja Pear do shopping possuem computadores,\n provável que mais pistas possam ser achadas lá.",
+        "path":"img/assets/PCTrash.png",
+        "pos":[400, 457]
+    }]
 	},
 	{
 		"background":"img/backgrounds/Parque.png",
 		"npcs":[
     {
         "nome": "Kiui",
+        "pos":[481, 475],
         "sprite": "img/chars/kiwi.png",
         "sprite_small": "img/chars/small/kiwi.png",
         "lines":[
@@ -185,6 +230,7 @@
     },
     {
         "nome": "Tiozão do Zap",
+        "pos":[513, 122],
         "sprite": "img/chars/tiozao_fitness.png",
         "sprite_small": "img/chars/small/tiozao_fitness.png",
         "lines":[
@@ -195,6 +241,7 @@
     },
     {
         "nome": "Pictor",
+        "pos":[786, 198],
         "sprite": "img/chars/pictor.png",
         "sprite_small": "img/chars/small/pictor.png",
         "lines":[
@@ -206,6 +253,7 @@
 
     {
         "nome": "Pessoa Confusa",
+        "pos":[168, 494],
         "sprite": "img/chars/pessoa_confusa.png",
         "sprite_small": "img/chars/small/pessoa_confusa.png",
         "lines":[
@@ -216,6 +264,7 @@
     },
     {
         "nome": "Projeto Supremo da Umisoft",
+        "pos":[993, 413],
         "sprite": "img/chars/proj_supremo_umisoft.png",
         "sprite_small": "img/chars/small/proj_supremo_umisoft.png",
         "lines":[
@@ -226,6 +275,7 @@
     },
     {
         "nome": "Funcionário da Umisoft",
+        "pos":[926, 413],
         "sprite": "img/chars/func_umisoft.png",
         "sprite_small": "img/chars/small/func_umisoft.png",
         "lines":[
@@ -236,6 +286,7 @@
     },
     {
         "nome": "Vick Victória",
+        "pos":[287, 284],
         "sprite": "img/chars/vick_victoria.png",
         "sprite_small": "img/chars/small/vick_victoria.png",
         "lines":[
@@ -246,6 +297,7 @@
     },
     {
         "nome": "Desenho grosseiro no chão",
+        "pos":[1106, 204],
         "sprite": "img/chars/coisachao.png",
         "sprite_small": "img/chars/small/coisachao.png",
         "lines":[
@@ -254,13 +306,23 @@
         "Vocês, agentes federais, são todos iguais! Vêem uma pessoa feia e já acham que ela fez alguma coisa errada."]
     }
 ],
-		"objects":[]
+		"objects":[{
+        "desc":"Lama\nO desenho aparenta mostrar um cara de cabelo curto\n mexendo em um notebook, sendo este tendo o símbolo (mal desenhado)\n da Pear.",
+        "path":"img/assets/Lama.png",
+        "pos":[432, 682]
+    },
+    {
+        "desc":"Folha\n Na folha está escrito: “Participe da CETAF Games\n Week!” Organização: Kiui. Vale a pena interrogar o organizador.",
+        "path":"img/assets/Folha.png",
+        "pos":[19, 682]
+    }]
 	},
 	{
 		"background":"img/backgrounds/Shopping.png",
 		"npcs":[
     {
         "nome": "Atendente da loja Pear",
+        "pos":[1078, 623],
         "sprite": "img/chars/atendente_loja_pear.png",
         "sprite_small": "img/chars/small/atendente_loja_pear.png",
         "lines": [
@@ -271,6 +333,7 @@
     },
     {
         "nome": "Marilia",
+        "pos":[744, 640],
         "sprite": "img/chars/hanna_baker.png",
         "sprite_small": "img/chars/small/hanna_baker.png",
         "lines": [
@@ -281,6 +344,7 @@
     },
     {
         "nome": "Bribo",
+        "pos":[35, 634],
         "sprite": "img/chars/bribo.png",
         "sprite_small": "img/chars/small/bribo.png",
         "lines": [
@@ -291,6 +355,7 @@
     },
     {
         "nome": "Informante",
+        "pos":[35, 103],
         "sprite": "img/chars/informante.png",
         "sprite_small": "img/chars/small/informante.png",
         "lines": [
@@ -301,6 +366,7 @@
     },
     {
         "nome": "Miguelo",
+        "pos":[267, 467],
         "sprite": "img/chars/miguelo.png",
         "sprite_small": "img/chars/small/miguelo.png",
         "lines": [
@@ -311,8 +377,9 @@
     },
     {
         "nome": "Dorinho",
-        "sprite": "img/chars/malfoi.png",
-        "sprite_small": "img/chars/small/malfoi.png",
+        "pos":[450, 156],
+        "sprite": "img/chars/dorinho.png",
+        "sprite_small": "img/chars/small/dorinho.png",
         "lines": [
             "Sim foi eu quem hackei todas as contas do Brasil, eu sou de mais, vou entrar para história, vai tentar me prender? Tente, com o dinheiro que peguei, o seu dinheiro, poderei pagar minha fiança mesmo.",
             "O indivíduo se entregou de bandeja, o que é um pouco estranho, seria ele mesmo?",
@@ -321,6 +388,7 @@
     },
     {
         "nome": "Rob Broward",
+        "pos":[266, 644],
         "sprite": "img/chars/rob_broward.png",
         "sprite_small": "img/chars/small/rob_broward.png",
         "lines": [
@@ -331,6 +399,7 @@
     },
     {
         "nome": "Estou furioso!",
+        "pos":[321, 241],
         "sprite": "img/chars/estou_furioso.png",
         "sprite_small": "img/chars/small/estou_furioso.png",
         "lines": [
@@ -341,6 +410,7 @@
     },
     {
         "nome": "Xeroque Rolmes",
+        "pos":[995, 318],
         "sprite": "img/chars/xeroque_rolmes.png",
         "sprite_small": "img/chars/small/xeroque_rolmes.png",
         "lines": [
@@ -350,6 +420,10 @@
         ]
     }
 ],
-		"objects":[]
+		"objects":[{
+        "desc":"Bur da Pear\nVocê nota que há um adesivo, que está de cabeça\n para baixo no notebook, quem colocou isso não percebeu que o\nnotebook abre, um detalhe meio óbvio. Você ignora a falta de\natenção do responsável pelo adesivo e vê que o código no notebook\n é o código que derrubou os sistemas bancários, provavelmente o\n culpado pode estar no local (shopping) ainda.\n",
+        "path":"img/assets/BurdaPearl.png",
+        "pos":[1036, 583]
+    }]
 	}
 ]

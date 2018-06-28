@@ -21,8 +21,8 @@ class WorldMap:
         self.item = 0
         self.locations = [
           ("CETAF", 167, 388, 572, 450),
-          ("Parque", 492, 624, 571, 448),
           ("Estação Cão Saetano", 684, 846, 255, 145),
+          ("Parque", 492, 624, 571, 448),
           ("Shopping Cão Saetano", 949, 1097, 475, 351)
           ]
         self.sW = sW

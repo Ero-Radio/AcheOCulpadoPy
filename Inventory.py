@@ -61,7 +61,7 @@ class Inventory(list):
               self.sH-150 - 120*int(i/10),
               90,
               90,
-              self.texture,
+              item.texture,
               0
               )
 
